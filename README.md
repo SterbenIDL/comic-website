@@ -1,66 +1,66 @@
-Squad Noobs Comic 🚀📖
+<div align="center">
 
-ברוכים הבאים לעמוד הרשמי של אתר הקומיקס Squad Noobs, הפרויקט פותח ובחסות IDL. הפרויקט נועד לספק חווית קריאה סוחפת, נקייה ונגישה לחובבי קומיקס וסיפורים דיגיטליים.
+# 🚀 Squad Noobs Comic | IDL
+*הבית הרשמי של קומיקס הסקוואד נובס*
 
-🌟 תכונות עיקריות (Features)
+[![Status](https://img.shields.io/badge/Status-Active-success.svg)]()
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)]()
+[![Powered by](https://img.shields.io/badge/Powered%20by-IDL-orange.svg)]()
 
-חווית קריאה אינטואיטיבית: מעבר חלק בין עמודים ופרקים בקומיקס.
+</div>
 
-עיצוב מותאם אישית (Responsive): התאמה מושלמת למכשירים ניידים, טאבלטים ומחשבים שולחניים.
+---
 
-הנגשה מתקדמת (accessibility.html / accessibility.js): התאמה לתקני נגישות מחמירים כדי שכל קורא יוכל ליהנות מהיצירה.
+## 📖 אודות הפרויקט
+ברוכים הבאים לפרויקט הרשמי של **Squad Noobs Comic** – אתר אינטרנט ייעודי המציג הרפתקאות קומיקס מרתקות, חוויית קריאה חלקה וממשק מודרני. הפרויקט מפותח, מנוהל ומופק בשיתוף פעולה הדוק עם **IDL**, תוך הקפדה על חוויית משתמש מוקפדת, ביצועים מהירים ועיצוב נקי.
 
-ניהול שגיאות ידידותי: עמוד 404.html מעוצב השומר על חווית משתמש רציפה.
+---
 
-📂 מבנה התיקיות והפרויקט (Project Structure)
+## ✨ תכונות מרכזיות
+- 📚 **קורא קומיקס דיגיטלי:** מעבר נוח ואינטואיטיבי בין פרקי הסיפור (`CHAPTER1` ועוד).
+- ♿ **תמיכה בנגישות:** מודול נגישות מובנה (`accessibility.js` ו-`accessibility.html`) להתאמת האתר למגוון משתמשים.
+- 📱 **רספונסיביות מלאה:** התאמה מושלמת למסכי מחשב, טאבלטים ומכשירים ניידים.
+- ⚡ **טעינה מהירה:** מבנה קוד נקי המבוסס על HTML5, CSS ו-JavaScript טהור ללא תלויות מיותרות.
 
-הפרויקט מאורגן בצורה נקייה ומודולרית:
+---
 
+## 🗂️ מבנה הפרויקט
+```text
 squad-noobs-comic/
-│
-├── index.html              # עמוד הבית של האתר
-├── 404.html                # עמוד שגיאה מותאם אישית
-├── accessibility.html      # הצהרת נגישות / עמוד נגישות
-├── accessibility.js        # סקריפט ניהול תוספות הנגישות
-├── CHAPTER1/               # תיקיית תוכן לפרק הראשון (תמונות, עמודים)
-└── ...                     # קבצי נכסים נוספים (CSS, JS, תמונות)
+├── 📁 CHAPTER1/          # תוכן הפרק הראשון בקומיקס
+├── 📄 404.html           # דף שגיאה מותאם אישית
+├── 📄 accessibility.html # עמוד נגישות
+├── 📄 accessibility.js   # סקריפט ניהול נגישות
+├── 📄 index.html         # עמוד הבית של האתר
+└── 📄 README.md          # תיעוד הפרויקט
+```
 
+🛠️ התקנה והרצה מקומית
+כדי להריץ עותק מקומי של האתר במחשב שלך לצורך פיתוח או בדיקות:
 
-🛠️ טכנולוגיות בשימוש
+שכפול המאפיין (Clone):
 
-HTML5 & CSS3: מבנה סמנטי ועיצוב מודרני.
+Bash
+git clone [https://github.com/your-username/squad-noobs-comic.git](https://github.com/your-username/squad-noobs-comic.git)
+מעבר לתיקיית הפרויקט:
 
-JavaScript (Vanilla): ניהול אינטראקציות, לוגיקת קריאה וסקריפטים לנגישות.
+Bash
+cd squad-noobs-comic
+הפעלה:
+פתח את קובץ ה-index.html בדפדפן האינטרנט המועדף עליך, או השתמש בתוסף כגון Live Server ב-VS Code.
 
-🚀 התקנה והרצה מקומית (Getting Started)
+🤝 תרומה לפרויקט
+מעוניינים לתרום, לדווח על באגים או להציע שיפורים?
 
-כדי להריץ את האתר בסביבת פיתוח מקומית במחשב שלך:
+צרו Fork לפרויקט.
 
-שכפול המאגר (Clone):
+צרו ענף חדש (git checkout -b feature/NewFeature).
 
-git clone https://github.com/your-username/squad-noobs-comic.git
+מבצעו Commit שינויים (git commit -m 'Add some NewFeature').
 
+בצעו Push לענף (git push origin feature/NewFeature).
 
-פתיחת התיקייה:
-פתח את התיקייה בסביבת העבודה המועדפת עליך (כגון VS Code).
+פתחו Pull Request מסודר.
 
-הרצה:
-הפעל שרת מקומי (לדוגמה, באמצעות התוסף Live Server ב-VS Code) או פשוט פתח את הקובץ index.html בדפדפן.
-
-🤝 תרומה לפרויקט (Contributing)
-
-אנו פתוחים להצעות לייעול, דיווח על באגים או שיפורים חזותיים בשיתוף פעולה עם IDL!
-
-צור Fork לפרויקט.
-
-צור ענף חדש (git checkout -b feature/AmazingFeature).
-
-בצע Commit לשינויים (git commit -m 'Add some AmazingFeature').
-
-בצע Push לענף (git push origin feature/AmazingFeature).
-
-פתח Pull Request.
-
-📄 רישיון וזכויות (License & Credits)
-
-פרויקט זה פותח בבעלות ובחסות IDL ומופץ תחת רישיון מקביל. ראה קובץ LICENSE לפרטים נוספים.
+🛡️ זכויות יוצרים וקרדיט
+כל הזכויות שמורות ל-Squad Noobs Comic בשיתוף ובפיתוח תחת מטריית IDL.
