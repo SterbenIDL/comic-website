@@ -34,33 +34,24 @@ squad-noobs-comic/
 ├── 📄 index.html         # עמוד הבית של האתר
 └── 📄 README.md          # תיעוד הפרויקט
 ```
-
 🛠️ התקנה והרצה מקומית
 כדי להריץ עותק מקומי של האתר במחשב שלך לצורך פיתוח או בדיקות:
-
-שכפול המאפיין (Clone):
-
+1. שכפול המאפיין (Clone):
 Bash
-git clone [https://github.com/your-username/squad-noobs-comic.git](https://github.com/your-username/squad-noobs-comic.git)
+
+git clone https://github.com/your-username/squad-noobs-comic.git
 מעבר לתיקיית הפרויקט:
-
 Bash
+
 cd squad-noobs-comic
 הפעלה:
 פתח את קובץ ה-index.html בדפדפן האינטרנט המועדף עליך, או השתמש בתוסף כגון Live Server ב-VS Code.
-
 🤝 תרומה לפרויקט
 מעוניינים לתרום, לדווח על באגים או להציע שיפורים?
-
-צרו Fork לפרויקט.
-
-צרו ענף חדש (git checkout -b feature/NewFeature).
-
-מבצעו Commit שינויים (git commit -m 'Add some NewFeature').
-
-בצעו Push לענף (git push origin feature/NewFeature).
-
-פתחו Pull Request מסודר.
-
+1. צרו Fork לפרויקט.
+2. צרו ענף חדש (git checkout -b feature/NewFeature).
+3. מבצעו Commit שינויים (git commit -m 'Add some NewFeature').
+4. בצעו Push לענף (git push origin feature/NewFeature).
+5. פתחו Pull Request מסודר.
 🛡️ זכויות יוצרים וקרדיט
 כל הזכויות שמורות ל-Squad Noobs Comic בשיתוף ובפיתוח תחת מטריית IDL.
