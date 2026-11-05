@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>שאלות נפוצות | Squad Noobs</title>
+    <link id="siteIcon" rel="icon" href="לוגו1.jpg">
+    <link id="siteTouchIcon" rel="apple-touch-icon" href="לוגו1.jpg">
+    <meta name="description" content="תשובות על הקומיקס, החנות, המשלוחים והתקנת האתר כאפליקציה." />
+    <link rel="canonical" href="https://YOUR-DOMAIN.example/faq.html" />
+    <meta name="robots" content="index, follow" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Heebo:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --gold: #c9a96a;
+        --ivory: #f4efe6;
+        --ink: #0b0b0a;
+        --mut: #9a948a;
+        --line: rgba(201, 169, 106, 0.22);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        background: var(--ink);
+      }
+
+      /* Base page and background */
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: var(--ink);
+        color: var(--ivory);
+        font:
+          1rem/1.85 Heebo,
+          Arial,
+          sans-serif;
+        padding: env(safe-area-inset-top, 0) 0 env(safe-area-inset-bottom, 0);
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: url("לוגו1.jpg") center/cover no-repeat;
+        opacity: 0.18;
+        filter: blur(8px) brightness(0.7);
+        z-index: -2;
+      }
+      body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: radial-gradient(circle at 50% 30%, rgba(11, 11, 10, 0.55), rgba(11, 11, 10, 0.96));
+        z-index: -1;
+        pointer-events: none;
+      }
+
+      /* Top navigation */
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+        padding: 12px 24px;
+        background: rgba(11, 11, 10, 0.8);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--line);
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+      }
+      .brand img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+      }
+      .brand span {
+        font-family: "Frank Ruhl Libre", serif;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        font-size: 1.25rem;
+        color: var(--gold);
+      }
+      .nl {
+        display: flex;
+        gap: 18px;
+        font-size: 0.85rem;
+      }
+      a {
+        color: var(--gold);
+      }
+
+      /* Layout and typography */
+      main {
+        flex: 1;
+        width: 100%;
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      main.w {
+        max-width: 980px;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Frank Ruhl Libre", serif;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
+      h1 {
+        color: var(--ivory);
+        font-weight: 500;
+        letter-spacing: 0.18em;
+        font-size: 2.2rem;
+        text-align: center;
+        margin: 0 0 0.3em;
+      }
+      h1::after {
+        content: "";
+        display: block;
+        width: 140px;
+        height: 1px;
+        margin: 1rem auto 0;
+        background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      }
+      h2 {
+        color: var(--gold);
+        font-size: 1.5rem;
+        margin-top: 2em;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 0.3em;
+      }
+      .m {
+        color: var(--mut);
+        font-size: 0.85rem;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 16px;
+      }
+
+      /* Cards and boxes */
+      .card,
+      .box {
+        background: rgba(20, 20, 18, 0.85);
+        border: 1px solid var(--line);
+        border-radius: 2px;
+        padding: 18px;
+        box-shadow: 0 14px 34px -16px rgba(0, 0, 0, 0.85);
+        transition: border-color 0.2s;
+      }
+      .card {
+        border-top: 2px solid var(--c, var(--gold));
+      }
+      .card:hover {
+        border-color: var(--gold);
+      }
+      .card h3 {
+        margin: 0;
+        font-size: 1.4rem;
+        color: var(--c, var(--gold));
+      }
+      .pw {
+        font-weight: 700;
+        margin: 0.2em 0;
+      }
+      ol {
+        list-style: none;
+        padding: 0;
+        border-right: 1px solid var(--gold);
+        margin: 0;
+      }
+      li {
+        padding: 0 18px 18px;
+      }
+
+      /* Buttons */
+      .cta {
+        display: inline-block;
+        margin: 6px 0 0 8px;
+        padding: 10px 20px;
+        border-radius: 2px;
+        background: var(--gold);
+        color: var(--ink);
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-decoration: none;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 24px 16px;
+        color: var(--mut);
+        font-size: 0.8rem;
+        border-top: 1px solid var(--line);
+      }
+      footer a {
+        color: var(--mut);
+        margin: 0 8px;
+      }
+
+      /* FAQ accordion */
+      details {
+        background: rgba(20, 20, 18, 0.85);
+        border: 1px solid var(--line);
+        border-radius: 2px;
+        margin: 10px 0;
+      }
+      details[open] {
+        border-color: var(--gold);
+      }
+      summary {
+        cursor: pointer;
+        padding: 14px 18px;
+        font-weight: 700;
+        list-style-position: inside;
+      }
+      summary:focus-visible {
+        outline: 3px solid var(--gold);
+        outline-offset: 2px;
+      }
+      details p {
+        margin: 0;
+        padding: 0 18px 16px;
+        color: var(--ivory);
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "he",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "האם הקריאה בקומיקס בחינם?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "כן. כל הפרקים פתוחים לקריאה באתר בלי הרשמה ובלי תשלום."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "איך האתר זוכר איפה הפסקתי לקרוא?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "האתר שומר בדפדפן שלך את הפרק והעמוד האחרונים. המידע נשאר במכשיר שלך בלבד, והוא יימחק אם תנקה את נתוני הדפדפן."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "אפשר להתקין את האתר כאפליקציה?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "כן. בדפדפן אפשר לבחור \"התקנה\" או \"הוספה למסך הבית\". פרקים שכבר נפתחו ימשיכו להיפתח גם בלי חיבור לאינטרנט."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "אילו מוצרים יש בחנות ומה המחירים?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "חולצה ₪99, כובע ₪79, מחזיק מפתחות ₪39, פוסטר ₪49 וחוברת ₪59. המוצרים, המחירים והזמינות עשויים להשתנות."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "איך מזמינים?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "מוסיפים מוצרים לעגלה, ממלאים שם, טלפון וכתובת למשלוח, משלמים ב-Bit ושולחים את פרטי ההזמנה בוואטסאפ. ההזמנה מאושרת לאחר שהתקבלו התשלום והפרטים."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "אילו מידות יש לחולצה?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "המידות הן S, M, L ו-XL. המידה שבחרת נשלחת איתך בפרטי ההזמנה."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "מתי המשלוח יגיע וכמה הוא עולה?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "זמני המשלוח ועלותו נמסרים בוואטסאפ בעת אישור ההזמנה."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "אפשר לבטל הזמנה או להחזיר מוצר?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "זכות ביטול העסקה נתונה לפי חוק הגנת הצרכן. לביטול או להחזרה פנו אלינו ונסביר מה הצעדים."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "משהו באתר לא עובד, מה עושים?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "נסו לרענן את הדף ולעדכן את הדפדפן. אם הבעיה חוזרת, כתבו לנו וציינו באיזה עמוד וקורה מה."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "האם האתר נגיש?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "כן, יש כפתור נגישות בפינה השמאלית התחתונה (גם בקיצור Alt+A). פרטים נוספים בהצהרת הנגישות."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Top navigation -->
+    <nav aria-label="ניווט באתר">
+      <a class="brand" href="comics.html"
+        ><img
+          src="לוגו.jpg"
+          onerror="
+            this.src = 'לוגו1.jpg';
+            this.onerror = function () {
+              this.style.display = 'none';
+            };
+          "
+          alt="Squad Noobs"
+        /><span>SQUAD NOOBS</span></a
+      >
+      <div class="nl">
+        <a href="characters.html">דמויות ויקום</a><a href="privacy.html">מדיניות פרטיות</a
+        ><a href="terms.html">תנאי שימוש</a><a href="accessibility.html">הצהרת נגישות</a>
+      </div>
+    </nav>
+    <!-- Main content -->
+    <main id="mainContent">
+      <h1>שאלות נפוצות</h1>
+      <p class="m" style="text-align: center">עודכן לאחרונה: 2 בנובמבר 2026</p>
+      <h2>הקומיקס והאתר</h2>
+      <details>
+        <summary>האם הקריאה בקומיקס בחינם?</summary>
+        <p>כן. כל הפרקים פתוחים לקריאה באתר בלי הרשמה ובלי תשלום.</p>
+      </details>
+      <details>
+        <summary>איך האתר זוכר איפה הפסקתי לקרוא?</summary>
+        <p>
+          האתר שומר בדפדפן שלך את הפרק והעמוד האחרונים. המידע נשאר במכשיר שלך בלבד, והוא יימחק אם תנקה את
+          נתוני הדפדפן.
+        </p>
+      </details>
+      <details>
+        <summary>אפשר להתקין את האתר כאפליקציה?</summary>
+        <p>
+          כן. בדפדפן אפשר לבחור &quot;התקנה&quot; או &quot;הוספה למסך הבית&quot;. פרקים שכבר נפתחו ימשיכו
+          להיפתח גם בלי חיבור לאינטרנט.
+        </p>
+      </details>
+      <details>
+        <summary>משהו באתר לא עובד, מה עושים?</summary>
+        <p>נסו לרענן את הדף ולעדכן את הדפדפן. אם הבעיה חוזרת, כתבו לנו וציינו באיזה עמוד וקורה מה.</p>
+      </details>
+      <details>
+        <summary>האם האתר נגיש?</summary>
+        <p>
+          כן, יש כפתור נגישות בפינה השמאלית התחתונה (גם בקיצור Alt+A). פרטים נוספים
+          <a href="accessibility.html">בהצהרת הנגישות</a>.
+        </p>
+      </details>
+      <h2>החנות</h2>
+      <details>
+        <summary>אילו מוצרים יש בחנות ומה המחירים?</summary>
+        <p>
+          חולצה ₪99, כובע ₪79, מחזיק מפתחות ₪39, פוסטר ₪49 וחוברת ₪59. המוצרים, המחירים והזמינות עשויים
+          להשתנות.
+        </p>
+      </details>
+      <details>
+        <summary>איך מזמינים?</summary>
+        <p>
+          מוסיפים מוצרים לעגלה, ממלאים שם, טלפון וכתובת למשלוח, משלמים ב-Bit ושולחים את פרטי ההזמנה בוואטסאפ.
+          ההזמנה מאושרת לאחר שהתקבלו התשלום והפרטים.
+        </p>
+      </details>
+      <details>
+        <summary>אילו מידות יש לחולצה?</summary>
+        <p>המידות הן S, M, L ו-XL. המידה שבחרת נשלחת איתך בפרטי ההזמנה.</p>
+      </details>
+      <details>
+        <summary>מתי המשלוח יגיע וכמה הוא עולה?</summary>
+        <p>זמני המשלוח ועלותו נמסרים בוואטסאפ בעת אישור ההזמנה.</p>
+      </details>
+      <details>
+        <summary>אפשר לבטל הזמנה או להחזיר מוצר?</summary>
+        <p>זכות ביטול העסקה נתונה לפי חוק הגנת הצרכן. לביטול או להחזרה פנו אלינו ונסביר מה הצעדים.</p>
+      </details>
+      <p class="m">
+        לא מצאת תשובה? כתבו לנו: <a href="mailto:idlofficialhq@gmail.com">idlofficialhq@gmail.com</a>
+      </p>
+    </main>
+    <!-- Footer -->
+    <footer>
+      &copy; 2026 IDL - Squad Noobs. כל הזכויות שמורות.<br /><a href="characters.html">דמויות ויקום</a
+      ><a href="faq.html">שאלות נפוצות</a><a href="privacy.html">מדיניות פרטיות</a
+      ><a href="terms.html">תנאי שימוש</a><a href="accessibility.html">הצהרת נגישות</a>
+    </footer>
+    <!-- Accessibility toolbar -->
+    <script src="accessibility.js" defer></script>
+  </body>
+</html>

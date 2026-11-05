@@ -1,0 +1,24 @@
+# Security and caching headers (works on Netlify and Cloudflare Pages).
+# The CSP is "Report-Only": it logs problems in the browser console without blocking anything.
+# Test the whole site, then rename the header to Content-Security-Policy to enforce it.
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://placehold.co; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+
+/*.html
+  Cache-Control: no-cache
+
+/sw.js
+  Cache-Control: no-cache
+
+/manifest.webmanifest
+  Cache-Control: no-cache
+
+/*.jpg
+  Cache-Control: public, max-age=604800
+
+/*.png
+  Cache-Control: public, max-age=604800

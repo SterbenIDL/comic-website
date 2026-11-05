@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>הדף לא נמצא | Squad Noobs</title>
+    <link id="siteIcon" rel="icon" href="לוגו1.jpg">
+    <link id="siteTouchIcon" rel="apple-touch-icon" href="לוגו1.jpg">
+    <meta name="description" content="הדף שחיפשת לא נמצא." />
+    <meta name="robots" content="noindex, follow" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Heebo:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --gold: #c9a96a;
+        --ivory: #f4efe6;
+        --ink: #0b0b0a;
+        --mut: #9a948a;
+        --line: rgba(201, 169, 106, 0.22);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        background: var(--ink);
+      }
+
+      /* Base page and background */
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: var(--ink);
+        color: var(--ivory);
+        font:
+          1rem/1.85 Heebo,
+          Arial,
+          sans-serif;
+        padding: env(safe-area-inset-top, 0) 0 env(safe-area-inset-bottom, 0);
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: url("/לוגו1.jpg") center/cover no-repeat;
+        opacity: 0.18;
+        filter: blur(8px) brightness(0.7);
+        z-index: -2;
+      }
+      body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: radial-gradient(circle at 50% 30%, rgba(11, 11, 10, 0.55), rgba(11, 11, 10, 0.96));
+        z-index: -1;
+        pointer-events: none;
+      }
+
+      /* Top navigation */
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+        padding: 12px 24px;
+        background: rgba(11, 11, 10, 0.8);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--line);
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+      }
+      .brand img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+      }
+      .brand span {
+        font-family: "Frank Ruhl Libre", serif;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        font-size: 1.25rem;
+        color: var(--gold);
+      }
+      .nl {
+        display: flex;
+        gap: 18px;
+        font-size: 0.85rem;
+      }
+      a {
+        color: var(--gold);
+      }
+
+      /* Layout and typography */
+      main {
+        flex: 1;
+        width: 100%;
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      main.w {
+        max-width: 980px;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Frank Ruhl Libre", serif;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
+      h1 {
+        color: var(--ivory);
+        font-weight: 500;
+        letter-spacing: 0.18em;
+        font-size: 2.2rem;
+        text-align: center;
+        margin: 0 0 0.3em;
+      }
+      h1::after {
+        content: "";
+        display: block;
+        width: 140px;
+        height: 1px;
+        margin: 1rem auto 0;
+        background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      }
+      h2 {
+        color: var(--gold);
+        font-size: 1.5rem;
+        margin-top: 2em;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 0.3em;
+      }
+      .m {
+        color: var(--mut);
+        font-size: 0.85rem;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 16px;
+      }
+
+      /* Cards and boxes */
+      .card,
+      .box {
+        background: rgba(20, 20, 18, 0.85);
+        border: 1px solid var(--line);
+        border-radius: 2px;
+        padding: 18px;
+        box-shadow: 0 14px 34px -16px rgba(0, 0, 0, 0.85);
+        transition: border-color 0.2s;
+      }
+      .card {
+        border-top: 2px solid var(--c, var(--gold));
+      }
+      .card:hover {
+        border-color: var(--gold);
+      }
+      .card h3 {
+        margin: 0;
+        font-size: 1.4rem;
+        color: var(--c, var(--gold));
+      }
+      .pw {
+        font-weight: 700;
+        margin: 0.2em 0;
+      }
+      ol {
+        list-style: none;
+        padding: 0;
+        border-right: 1px solid var(--gold);
+        margin: 0;
+      }
+      li {
+        padding: 0 18px 18px;
+      }
+
+      /* Buttons */
+      .cta {
+        display: inline-block;
+        margin: 6px 0 0 8px;
+        padding: 10px 20px;
+        border-radius: 2px;
+        background: var(--gold);
+        color: var(--ink);
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-decoration: none;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 24px 16px;
+        color: var(--mut);
+        font-size: 0.8rem;
+        border-top: 1px solid var(--line);
+      }
+      footer a {
+        color: var(--mut);
+        margin: 0 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top navigation -->
+    <nav aria-label="ניווט באתר">
+      <a class="brand" href="/comics.html"
+        ><img
+          src="/לוגו.jpg"
+          onerror="
+            this.src = 'לוגו1.jpg';
+            this.onerror = function () {
+              this.style.display = 'none';
+            };
+          "
+          alt="Squad Noobs"
+        /><span>SQUAD NOOBS</span></a
+      >
+      <div class="nl">
+        <a href="/characters.html">דמויות ויקום</a><a href="/faq.html">שאלות נפוצות</a
+        ><a href="/privacy.html">מדיניות פרטיות</a><a href="/terms.html">תנאי שימוש</a
+        ><a href="/accessibility.html">הצהרת נגישות</a>
+      </div>
+    </nav>
+    <!-- Main content -->
+    <main id="mainContent">
+      <h1>404</h1>
+      <p style="text-align: center; font-size: 1.2rem">
+        הדף שחיפשת לא נמצא. אולי הקישור שגוי, ואולי הדף עבר למקום אחר.
+      </p>
+      <p style="text-align: center"><a class="cta" href="/comics.html">חזרה לקומיקס</a></p>
+    </main>
+    <!-- Footer -->
+    <footer>
+      &copy; 2026 IDL - Squad Noobs. כל הזכויות שמורות.<br /><a href="/characters.html">דמויות ויקום</a
+      ><a href="/faq.html">שאלות נפוצות</a><a href="/privacy.html">מדיניות פרטיות</a
+      ><a href="/terms.html">תנאי שימוש</a><a href="/accessibility.html">הצהרת נגישות</a>
+    </footer>
+    <!-- Accessibility toolbar -->
+    <script src="/accessibility.js" defer></script>
+  </body>
+</html>

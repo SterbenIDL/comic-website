@@ -1,0 +1,2115 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squad Noobs - ספר הקומיקס המלא</title>
+    <!-- OG:START -->
+    <meta name="description" content="ארבעה חברים, ארבעה כוחות, ספר קומיקס אחד. קראו את כל הפרקים אונליין.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="he_IL">
+    <meta property="og:site_name" content="Squad Noobs">
+    <meta property="og:title" content="Squad Noobs - ספר הקומיקס המלא">
+    <meta property="og:description" content="ארבעה חברים, ארבעה כוחות, ספר קומיקס אחד. קראו את כל הפרקים אונליין.">
+    <meta property="og:url" content="https://YOUR-DOMAIN.example/comics.html">
+    <meta property="og:image" content="https://YOUR-DOMAIN.example/Chapter_1.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Squad Noobs - ספר הקומיקס המלא">
+    <meta name="twitter:description" content="ארבעה חברים, ארבעה כוחות, ספר קומיקס אחד. קראו את כל הפרקים אונליין.">
+    <meta name="twitter:image" content="https://YOUR-DOMAIN.example/Chapter_1.jpeg">
+    <!-- OG:END -->
+    <link rel="canonical" href="https://YOUR-DOMAIN.example/comics.html">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#0B0B0A">
+    <meta property="og:image:alt" content="Squad Noobs - ספר קומיקס אונליין">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ComicSeries","name":"Squad Noobs","url":"https://YOUR-DOMAIN.example/comics.html","inLanguage":"he","description":"ארבעה חברים, ארבעה כוחות, ספר קומיקס אחד. קראו את כל הפרקים אונליין.","image":"https://YOUR-DOMAIN.example/Chapter_1.jpeg","publisher":{"@type":"Organization","name":"IDL"},"isAccessibleForFree":true,"workExample":{"@type":"VideoGame","name":"Squad Noobs - 2D Fighting Game","url":"https://squad.idlhq.co.il"},"hasPart":[{"@type":"ComicIssue","issueNumber":1,"name":"פרק 1: לידת הכוחות","url":"https://YOUR-DOMAIN.example/comics.html#chapter1-page1","isPartOf":{"@type":"ComicSeries","name":"Squad Noobs"}},{"@type":"ComicIssue","issueNumber":2,"name":"פרק 2: הדירה","url":"https://YOUR-DOMAIN.example/comics.html#chapter2-page1","isPartOf":{"@type":"ComicSeries","name":"Squad Noobs"}},{"@type":"ComicIssue","issueNumber":3,"name":"פרק 3: כאוס בעיר","url":"https://YOUR-DOMAIN.example/comics.html#chapter3-page1","isPartOf":{"@type":"ComicSeries","name":"Squad Noobs"}},{"@type":"ComicIssue","issueNumber":4,"name":"פרק 4: מלחמת הפסגה","url":"https://YOUR-DOMAIN.example/comics.html#chapter4-page1","isPartOf":{"@type":"ComicSeries","name":"Squad Noobs"}}]}</script>
+    <!-- Tab icon (favicon). The script below picks the first logo file that actually exists next to this page. -->
+    <link id="siteIcon" rel="icon" href="לוגו1.jpg">
+    <link id="siteTouchIcon" rel="apple-touch-icon" href="לוגו1.jpg">
+    <script>
+        (function () {
+            var candidates = ['favicon.png', 'logo.png', 'לוגו1.jpg', 'לוגו.jpg', 'לוגו.png'];
+            function apply(src) {
+                var a = document.getElementById('siteIcon'), b = document.getElementById('siteTouchIcon');
+                if (a) a.href = src;
+                if (b) b.href = src;
+            }
+            (function tryNext(i) {
+                if (i >= candidates.length) return;
+                var src = encodeURI(candidates[i]), img = new Image();
+                img.onload = function () { apply(src); };
+                img.onerror = function () { tryNext(i + 1); };
+                img.src = src;
+            })(0);
+        })();
+    </script>
+    <!-- PWA Setup -->
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="alternate" type="application/rss+xml" title="Squad Noobs - פרקים חדשים" href="feed.xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: {
+            slate: {50:'#F6F2EA',100:'#EDE7DB',200:'#DCD4C4',300:'#C4BBA9',400:'#9A9283',500:'#746E62',600:'#524E46',700:'#38352F',800:'#25231F',900:'#171614',950:'#0B0B0A'},
+            amber: {100:'#F3EAD3',200:'#E9D9B0',300:'#DCC58C',400:'#C9A96A',500:'#B8975A',600:'#9C7E46',700:'#7D6436',950:'#2A2112'},
+            indigo:{200:'#E4B8BF',300:'#C98A95',400:'#A9525F',500:'#8C3341',600:'#6E2331',700:'#561A26',800:'#40131C',900:'#2C0D13',950:'#1B080C'},
+            rose:  {300:'#E0A0A8',400:'#C8606B',500:'#A93B49',600:'#8C2A38'},
+            purple:{400:'#A9525F',500:'#8C3341'},
+            cyan:  {300:'#E9D9B0',400:'#DCC58C'}
+        } } } };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Rubik', sans-serif;
+            background-color: #030712;
+            color: #f8fafc;
+            position: relative;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('לוגו1.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            opacity: 0.18;
+            filter: blur(8px) brightness(0.7);
+            z-index: -2;
+        }
+
+        #particleCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .bg-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(3, 7, 18, 0.65) 0%, rgba(3, 7, 18, 0.95) 100%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .comic-font {
+            font-family: 'Bangers', cursive;
+            letter-spacing: 1.5px;
+        }
+
+        /* --- Dynamic Comic Panels Styling --- */
+        .tilt-card {
+            transform-style: preserve-3d;
+            transition: transform 0.15s ease-out, box-shadow 0.3s ease;
+            clip-path: polygon(0 0, 100% 0, 100% 97%, 97% 100%, 0 100%);
+        }
+        .tilt-card:hover {
+            transform: translateY(-5px) scale(1.01);
+            box-shadow: 0 15px 35px -10px rgba(201, 169, 106, 0.35);
+        }
+
+        /* --- Ticker Banner (seamless loop, always moving) --- */
+        .ticker-wrap {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            position: relative;
+            z-index: 25;
+            background: rgba(11, 11, 10, 0.92);
+            border-bottom: 1px solid rgba(201, 169, 106, 0.3);
+            font-family: 'Heebo', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #F4EFE6;
+        }
+        .ticker-viewport { flex: 1; min-width: 0; overflow: hidden; }
+        .ticker-track { display: flex; padding: 8px 0; }
+        .ticker-group { display: flex; flex-wrap: wrap; justify-content: center; margin: 0; padding: 0; list-style: none; }
+        .ticker-group li { position: relative; display: flex; align-items: center; gap: 8px; padding: 0 28px; }
+        .ticker-group li::after { content: ""; position: absolute; inset-inline-end: -2px; width: 5px; height: 5px; background: #C9A96A; transform: rotate(45deg); }
+        .ticker-group svg { width: 14px; height: 14px; flex: none; color: #C9A96A; }
+
+        .ticker-wrap.is-running .ticker-viewport { white-space: nowrap; -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); }
+        .ticker-wrap.is-running .ticker-track { width: max-content; will-change: transform; }
+        .ticker-wrap.is-running .ticker-group { flex: none; flex-wrap: nowrap; justify-content: flex-start; }
+        @keyframes ticker-scroll { to { transform: translateX(var(--ticker-shift, -100%)); } }
+        html:not(.a11y-anim) .ticker-wrap.is-running .ticker-track { animation: ticker-scroll var(--ticker-dur, 40s) linear infinite !important; }
+        html:not(.a11y-anim) .ticker-wrap.is-running:hover .ticker-track { animation-play-state: paused !important; }
+
+        .neon-glow-amber { box-shadow: 0 0 25px rgba(245, 158, 11, 0.25); }
+        .neon-glow-yellow { box-shadow: 0 0 25px rgba(250, 204, 21, 0.25); }
+        .neon-glow-cyan { box-shadow: 0 0 25px rgba(34, 211, 238, 0.25); }
+        .neon-glow-blue { box-shadow: 0 0 25px rgba(59, 130, 246, 0.25); }
+        
+        .comic-speech-bubble {
+            position: relative;
+            background: #ffffff;
+            color: #020617;
+            border: 2px solid #000000;
+            box-shadow: 3px 3px 0px #000000;
+            border-radius: 20px;
+            padding: 0.35rem 0.65rem;
+            max-width: 170px;
+            font-size: 0.75rem;
+        }
+        
+        .comic-speech-bubble::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            right: 15px;
+            width: 0;
+            height: 0;
+            border-left: 7px solid transparent;
+            border-right: 2px solid transparent;
+            border-top: 8px solid #ffffff;
+        }
+
+        .comic-speech-bubble::before {
+            content: '';
+            position: absolute;
+            bottom: -11px;
+            right: 14px;
+            width: 0;
+            height: 0;
+            border-left: 9px solid transparent;
+            border-right: 3px solid transparent;
+            border-top: 11px solid #000000;
+        }
+
+        .comic-action {
+            font-family: 'Bangers', cursive;
+            text-shadow: 3px 3px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000;
+        }
+
+        .webtoon-scroll-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            overflow-y: auto;
+            max-height: 78vh;
+            padding-right: 0.5rem;
+        }
+
+        #comicModal.overlays-hidden .comic-overlay { display: none !important; }
+        #comicModal.night-mode #comicPageContainer { filter: sepia(0.45) saturate(0.9) brightness(0.8); }
+        #comicPageContainer { transition: filter 0.4s ease; }
+
+        #comicPageContainer.reveal-fx .comic-overlay {
+            opacity: 0;
+            transform: translateY(8px) scale(0.82);
+            transition: opacity 0.35s ease, transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        #comicPageContainer.reveal-fx .comic-overlay.in {
+            opacity: 1;
+            transform: none;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            #comicPageContainer.reveal-fx .comic-overlay { opacity: 1; transform: none; transition: none; }
+        }
+
+        .zoomable-panel {
+            transition: transform 0.3s ease;
+            transform-origin: center center;
+        }
+
+        #cartDrawer { transition: opacity 0.3s ease; }
+        #cartDrawerContent { transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
+
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #090d16; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #334155; }
+    </style>
+<style id="deluxe">
+        :root { --gold:#C9A96A; --ivory:#F4EFE6; --ink:#0B0B0A; }
+        body { font-family:'Heebo',sans-serif !important; background:var(--ink) !important; color:var(--ivory); }
+        body::after { content:''; position:fixed; inset:0; pointer-events:none; z-index:1; opacity:.07; mix-blend-mode:overlay;
+            background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+        #particleCanvas { display:none !important; }
+        .bg-overlay { background:radial-gradient(circle at 50% 30%, rgba(11,11,10,.55), rgba(11,11,10,.96)) !important; }
+
+        h1,h2,h3,.comic-font,.font-comic { font-family:'Frank Ruhl Libre',serif !important; letter-spacing:.04em; font-weight:700; }
+        .font-rubik,.comic-speech-bubble { font-family:'Heebo',sans-serif !important; }
+        .comic-action { font-family:'Bangers',cursive !important; }
+        .bg-clip-text { background-image:none !important; -webkit-text-fill-color:var(--gold) !important; color:var(--gold) !important; }
+        h1.bg-clip-text { -webkit-text-fill-color:var(--ivory) !important; color:var(--ivory) !important; letter-spacing:.22em; font-weight:500; }
+        header::after { content:''; width:140px; height:1px; margin-top:1.4rem; background:linear-gradient(90deg,transparent,var(--gold),transparent); }
+
+        .rounded-3xl,.rounded-2xl,.rounded-xl,.rounded-lg,.rounded-full { border-radius:2px !important; }
+        .rounded-3xl { border-radius:4px !important; }
+        .shadow-2xl,.shadow-xl,.shadow-lg,.shadow-md,.neon-glow-amber,.theme-glow { box-shadow:0 14px 34px -16px rgba(0,0,0,.85) !important; }
+        .border-2 { border-width:1px !important; }
+        .-rotate-1 { transform:none !important; }
+        .animate-pulse,.animate-bounce { animation:none !important; }
+        nav { border-radius:0 !important; border-width:0 0 1px !important; border-color:rgba(201,169,106,.25) !important; }
+        .tilt-card { border-color:rgba(201,169,106,.22) !important; }
+        .tilt-card:hover { border-color:var(--gold) !important; }
+        .to-rose-600.from-amber-500 { background:var(--gold) !important; color:var(--ink) !important; letter-spacing:.2em; }
+        #readingProgressBar { background:var(--gold) !important; }
+
+        .comic-speech-bubble { background:var(--ivory) !important; color:#171614 !important; border:1px solid var(--gold) !important;
+            border-radius:2px !important; box-shadow:0 8px 20px -8px rgba(0,0,0,.65) !important; }
+        #comicModal { background:rgba(6,6,5,.98) !important; backdrop-filter:none !important; }
+        #comicModal .max-w-5xl { border-radius:0 !important; border:1px solid rgba(201,169,106,.2) !important; }
+        #comicModal .max-w-5xl > div:first-child, #thumbnailsStripWrapper, #chapterCommunityBar, #modalFooterControls { transition:opacity .4s ease; }
+        #comicModal.chrome-hidden .max-w-5xl > div:first-child, #comicModal.chrome-hidden #thumbnailsStripWrapper,
+        #comicModal.chrome-hidden #chapterCommunityBar, #comicModal.chrome-hidden #modalFooterControls { opacity:0; pointer-events:none; }
+        .star-btn { color:var(--gold); font-size:1.15rem; line-height:1; }
+        .ico { display:block; }
+    </style>
+</head>
+<body class="min-h-screen text-slate-100 flex flex-col justify-between p-4 md:p-8">
+
+    <canvas id="particleCanvas"></canvas>
+    <div class="bg-overlay"></div>
+
+    <!-- News ticker: scrolling updates -->
+    <div class="ticker-wrap" id="ticker" role="region" aria-label="עדכונים">
+        <div class="ticker-viewport">
+            <div class="ticker-track" id="tickerTrack">
+                <ul class="ticker-group" id="tickerBase">
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg><span data-i18n="tick1">פרק 5 בתהליך הכנה!</span></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l1 13H5z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><span data-i18n="tick2">מבצע מכירה מוקדמת בעיצומו על החולצות והחוברות המודפסות!</span></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2c3 2 5 6 5 10l-5 4-5-4c0-4 2-8 5-10z"/><path d="m9 17-3 4 4-1m5-3 3 4-4-1"/></svg><span data-i18n="tick3">הצטרפו לשרת הדיסקורד הרשמי לעדכונים בלעדיים!</span></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h7a2 2 0 0 1 2 2v14a2 2 0 0 0-2-2H3z"/><path d="M21 4h-7a2 2 0 0 0-2 2v14a2 2 0 0 1 2-2h7z"/></svg><span data-i18n="tick4">כרך 1 שלם: 4 פרקים, 60 עמודים, והכול לקריאה בחינם!</span></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="11" rx="5"/><path d="M7 10v5M4.5 12.5h5"/><circle cx="15.5" cy="11.5" r="1"/><circle cx="18" cy="14" r="1"/></svg><span data-i18n="tick5">שחקו במשחק של החבורה!</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Navigation Toolbar -->
+    <nav class="w-full max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4 py-3 px-6 bg-slate-900/80 backdrop-blur-md border border-slate-800 rounded-2xl shadow-xl z-20 mt-4">
+        <div class="flex items-center gap-3">
+            <img src="לוגו.jpg" onerror="this.src='לוגו1.jpg'; this.onerror=function(){this.style.display='none';}" alt="Squad Noobs Logo" class="w-10 h-10 object-contain drop-shadow-[0_0_10px_rgba(245,158,11,0.6)]">
+            <span class="comic-font text-xl text-amber-400">SQUAD NOOBS</span>
+            <span class="hidden sm:inline-block bg-amber-500/10 text-amber-400 text-xs px-2.5 py-1 rounded-full border border-amber-500/20 font-mono">Deluxe Edition</span>
+        </div>
+        <div class="flex items-center gap-3">
+            <button onclick="playSFX('click'); toggleTrailerModal()" class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition flex items-center gap-1.5 shadow-md">
+                <span>🎬</span> <span data-i18n="trailer">טריילר קומיקס</span>
+            </button>
+            <a href="https://squad.idlhq.co.il" target="_blank" rel="noopener noreferrer" onclick="playSFX('click')" class="bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition flex items-center gap-1.5 shadow-md">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="4"/><path d="M6 12h4M8 10v4"/><circle cx="15.5" cy="11" r="1"/><circle cx="18" cy="13" r="1"/></svg> <span data-i18n="game">שחקו במשחק</span>
+            </a>
+            <button onclick="playSFX('click'); openMerchModal()" class="bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-extrabold px-3.5 py-2 rounded-xl transition flex items-center gap-1.5 shadow-md">
+                <span>🛍️</span> <span data-i18n="merch">חנות מוצרים</span>
+            </button>
+            <button onclick="playSFX('click'); toggleLang()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold px-3 py-2 rounded-xl border border-slate-700 transition">
+                🌐 <span id="langBtnText">EN</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="mainContent" tabindex="-1" class="w-full max-w-6xl mx-auto text-center my-6 flex flex-col items-center">
+        <h1 class="comic-font text-6xl md:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-rose-500 to-cyan-400 drop-shadow-[0_5px_15px_rgba(0,0,0,0.8)] tracking-wider">
+            SQUAD NOOBS
+        </h1>
+        <p id="headerSubtitle" class="text-slate-400 mt-2 text-base md:text-xl font-medium max-w-2xl leading-relaxed" data-i18n="subtitle">
+            לחץ על אחד הגיבורים כדי לפתוח את חוברת הקומיקס המלאה!
+        </p>
+        <div id="resumeBanner" class="hidden mt-4 bg-amber-500/10 border border-amber-500/30 px-4 py-2 rounded-xl flex items-center gap-3 text-xs">
+            <span class="text-amber-400 font-bold" id="resumeText">המשך מהמקום שעזבת</span>
+            <button onclick="resumeReading()" class="bg-amber-500 text-slate-950 px-3 py-1 rounded-lg font-extrabold hover:bg-amber-400 transition" data-i18n="resumeBtn">המשך לקרוא</button>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <div class="w-full max-w-6xl mx-auto my-auto py-4 flex flex-col gap-12">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Chapter 1 -->
+            <div onclick="playSFX('powerup'); openComic('CHAPTER1')" class="tilt-card bg-slate-900/90 border-2 border-slate-800 rounded-3xl overflow-hidden shadow-2xl hover:border-amber-500/80 transition-all duration-300 flex flex-col group cursor-pointer theme-glow neon-glow-amber">
+                <div class="relative overflow-hidden aspect-[4/3] bg-slate-950">
+                    <img src="Chapter_1.jpg" loading="lazy" decoding="async"
+                        onerror="this.src='Chapter_1.jpg'; this.onerror=function(){this.src='https://placehold.co/800x600/1e293b/f59e0b?text=CHAPTER+1';}"
+                        alt="CHAPTER 1 — The Origin & Awakening" 
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-4 right-4 bg-gradient-to-r from-amber-500 to-rose-600 text-slate-950 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shadow-lg">CHAPTER 1</div>
+                    <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+                        <span class="comic-font text-2xl bg-amber-500 text-slate-950 px-6 py-3 rounded-2xl shadow-2xl transform -rotate-1 group-hover:scale-110 transition-transform" data-i18n="readCh1">📖 קרא את פרק 1 (15 עמודים)</span>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between bg-gradient-to-b from-slate-900 to-slate-950">
+                    <div>
+                        <h2 class="comic-font text-3xl md:text-4xl text-amber-400 tracking-wide" data-i18n="ch1Title">CHAPTER 1 — לידת הכוחות</h2>
+                        <p class="text-slate-300 text-sm mt-2 leading-relaxed" data-i18n="ch1Desc">הלידה בבית החולים, המפגש בבית הקפה, השיחה המאיימת מהמספר החסוי והתפרצות הכוחות הראשונה בשולחן.</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-800/80 flex justify-between items-center text-xs text-slate-400 font-bold">
+                        <span class="text-amber-400/90" data-i18n="ch1Focus">פוקוס: 📖 פרק הפתיחה והחשיפה</span>
+                        <span class="bg-amber-500/10 text-amber-400 px-3 py-1 rounded-lg border border-amber-500/20" data-i18n="pagesCount">15 עמודים 📖</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 2 -->
+            <div onclick="playSFX('powerup'); openComic('CHAPTER2')" class="tilt-card bg-slate-900/90 border-2 border-slate-800 rounded-3xl overflow-hidden shadow-2xl hover:border-yellow-400/80 transition-all duration-300 flex flex-col group cursor-pointer theme-glow neon-glow-yellow">
+                <div class="relative overflow-hidden aspect-[4/3] bg-slate-950">
+                    <img src="Chapter_2.jpg" loading="lazy" decoding="async"
+                        onerror="this.src='Chapter_2.jpg'; this.onerror=function(){this.src='https://placehold.co/800x600/1e293b/facc15?text=CHAPTER+2';}"
+                        alt="CHAPTER 2 — The Crystal Shield & Intrusion" 
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-4 right-4 bg-gradient-to-r from-yellow-400 to-amber-500 text-slate-950 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shadow-lg">CHAPTER 2</div>
+                    <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+                        <span class="comic-font text-2xl bg-yellow-400 text-slate-950 px-6 py-3 rounded-2xl shadow-2xl transform rotate-1 group-hover:scale-110 transition-transform" data-i18n="readCh2">📖 קרא את פרק 2 (15 עמודים)</span>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between bg-gradient-to-b from-slate-900 to-slate-950">
+                    <div>
+                        <h2 class="comic-font text-3xl md:text-4xl text-yellow-300 tracking-wide" data-i18n="ch2Title">CHAPTER 2 — הדירה</h2>
+                        <p class="text-slate-300 text-sm mt-2 leading-relaxed" data-i18n="ch2Desc">החיים הכפולים במפקדה, קניית התכשיטים בקניון, המדפסת בתלת-ממד, והדיפת הפורצים בלילה על ידי רוני.</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-800/80 flex justify-between items-center text-xs text-slate-400 font-bold">
+                        <span class="text-yellow-300/90" data-i18n="ch2Focus">פוקוס: 🔬 התארגנות המפקדה ועימות בדירה</span>
+                        <span class="bg-yellow-400/10 text-yellow-300 px-3 py-1 rounded-lg border border-yellow-400/20" data-i18n="pagesCount">15 עמודים 📖</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 3 -->
+            <div onclick="playSFX('powerup'); openComic('CHAPTER3')" class="tilt-card bg-slate-900/90 border-2 border-slate-800 rounded-3xl overflow-hidden shadow-2xl hover:border-cyan-400/80 transition-all duration-300 flex flex-col group cursor-pointer theme-glow neon-glow-cyan">
+                <div class="relative overflow-hidden aspect-[4/3] bg-slate-950">
+                    <img src="Chapter_3.jpg" loading="lazy" decoding="async"
+                        onerror="this.src='Chapter_3.jpg'; this.onerror=function(){this.src='https://placehold.co/800x600/1e293b/22d3ee?text=CHAPTER+3';}"
+                        alt="CHAPTER 3 — The Tempest Conduit" 
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-4 right-4 bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shadow-lg">CHAPTER 3</div>
+                    <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+                        <span class="comic-font text-2xl bg-cyan-400 text-slate-950 px-6 py-3 rounded-2xl shadow-2xl transform -rotate-1 group-hover:scale-110 transition-transform" data-i18n="readCh3">📖 קרא את פרק 3 (15 עמודים)</span>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between bg-gradient-to-b from-slate-900 to-slate-950">
+                    <div>
+                        <h2 class="comic-font text-3xl md:text-4xl text-cyan-300 tracking-wide" data-i18n="ch3Title">CHAPTER 3 — כאוס בעיר</h2>
+                        <p class="text-slate-300 text-sm mt-2 leading-relaxed" data-i18n="ch3Desc">פענוח הנתונים במעבדה, הטורנדו והברקים בשמיים, וההגנה על הרחובות מול המתקפה השמימית.</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-800/80 flex justify-between items-center text-xs text-slate-400 font-bold">
+                        <span class="text-cyan-300/90" data-i18n="ch3Focus">פוקוס: 🚀 איום מהשמיים ולחימה עירונית</span>
+                        <span class="bg-cyan-400/10 text-cyan-300 px-3 py-1 rounded-lg border border-cyan-400/20" data-i18n="pagesCount">15 עמודים 📖</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 4 -->
+            <div onclick="playSFX('powerup'); openComic('CHAPTER4')" class="tilt-card bg-slate-900/90 border-2 border-slate-800 rounded-3xl overflow-hidden shadow-2xl hover:border-blue-500/80 transition-all duration-300 flex flex-col group cursor-pointer theme-glow neon-glow-blue">
+                <div class="relative overflow-hidden aspect-[4/3] bg-slate-950">
+                    <img src="Chapter_4.jpg" loading="lazy" decoding="async"
+                        onerror="this.src='Chapter_4.jpg'; this.onerror=function(){this.src='https://placehold.co/800x600/1e293b/3b82f6?text=CHAPTER+4';}"
+                        alt="CHAPTER 4 — Blood & Tide" 
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-4 right-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-slate-950 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shadow-lg">CHAPTER 4</div>
+                    <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+                        <span class="comic-font text-2xl bg-blue-500 text-slate-950 px-6 py-3 rounded-2xl shadow-2xl transform rotate-1 group-hover:scale-110 transition-transform" data-i18n="readCh4">📖 קרא את פרק 4 (15 עמודים)</span>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between bg-gradient-to-b from-slate-900 to-slate-950">
+                    <div>
+                        <h2 class="comic-font text-3xl md:text-4xl text-blue-400 tracking-wide" data-i18n="ch4Title">CHAPTER 4 — מלחמת הפסגה</h2>
+                        <p class="text-slate-300 text-sm mt-2 leading-relaxed" data-i18n="ch4Desc">עימות חזיתי מול מנהיג ארגון הצללים, שילוב כוחות אפי בראשות עידן, והניצחון הגדול של Squad Noobs!</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-800/80 flex justify-between items-center text-xs text-slate-400 font-bold">
+                        <span class="text-blue-400/90" data-i18n="ch4Focus">פוקוס: ⚔️ עימות המנהיגים והקרב הכולל</span>
+                        <span class="bg-blue-500/10 text-blue-400 px-3 py-1 rounded-lg border border-blue-500/20" data-i18n="pagesCount">15 עמודים 📖</span>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Coming Soon Banner Section -->
+        <section class="w-full text-center py-8 px-4 bg-slate-900/60 border-2 border-dashed border-indigo-500/40 rounded-3xl backdrop-blur-md flex flex-col items-center justify-center gap-3 shadow-xl relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-r from-indigo-500/10 via-purple-500/10 to-amber-500/10 animate-pulse"></div>
+            <div class="relative z-10 flex flex-col items-center gap-2">
+                <span class="bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest" data-i18n="comingBadge">
+                    בקרוב באתר
+                </span>
+                <h2 class="comic-font text-4xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-rose-400 to-cyan-300 tracking-wide drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]" data-i18n="comingTitle">
+                    ⚡ עוד פרקים נוספים בקרוב... 🚀
+                </h2>
+                <p class="text-slate-400 text-sm md:text-base font-medium max-w-xl" data-i18n="comingDesc">
+                    ההרפתקה של Squad Noobs רק התחילה! הכן את עצמך לפרקים הבאים בסדרה.
+                </p>
+            </div>
+        </section>
+
+        <!-- Community Discord Section -->
+        <section class="w-full text-center py-6 px-4 bg-indigo-950/40 border border-indigo-500/30 rounded-3xl backdrop-blur-md flex flex-col items-center gap-3">
+            <h3 class="comic-font text-2xl text-indigo-300" data-i18n="discordTitle">💬 הצטרפו לקהילת המעריצים שלנו!</h3>
+            <p class="text-xs text-slate-300 max-w-md" data-i18n="discordDesc">רוצים לדבר על הפרקים, לראות סקיצות סודיות ולהכיר עוד מעריצים? היכנסו לערוץ הדיסקורד.</p>
+            <a href="https://discord.com" target="_blank" class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold px-5 py-2.5 rounded-xl transition shadow-lg flex items-center gap-2">
+                <span>🚀</span> <span data-i18n="discordBtn">היכנס לשרת הדיסקורד</span>
+            </a>
+        </section>
+    </div>
+
+    <!-- Comic Book Modal Reader -->
+    <div id="comicModal" role="dialog" aria-modal="true" class="fixed inset-0 bg-slate-950/95 backdrop-blur-xl z-50 hidden flex flex-col items-center justify-center p-2 md:p-6 transition-all duration-300">
+        <div class="w-full max-w-5xl bg-slate-900 border-2 border-slate-800 rounded-3xl shadow-2xl overflow-hidden flex flex-col h-[94vh] my-auto">
+            
+            <div class="bg-slate-950 px-3 sm:px-6 py-3 sm:py-4 flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80">
+                <div class="flex items-center gap-3">
+                    <span id="modalCategoryBadge" class="hidden sm:inline-block bg-amber-500/20 text-amber-400 border border-amber-500/30 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider" data-i18n="fullComicBadge">
+                        קומיקס מלא
+                    </span>
+                    <h3 id="modalHeroTitle" class="comic-font text-2xl md:text-3xl text-slate-100 tracking-wide">
+                        חוברת קומיקס
+                    </h3>
+                </div>
+
+                <div class="flex flex-wrap items-center justify-end gap-1.5 sm:gap-2">
+                    <button onclick="toggleAudio()" id="audioToggleBtn" class="bg-slate-800 hover:bg-slate-700 text-slate-300 p-2 rounded-xl text-xs font-bold transition border border-slate-700" title="אפקטים קוליים">🔊</button>
+                    <button onclick="adjustZoom(0.15)" id="zoomInBtn" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-2.5 py-1.5 rounded-xl text-xs font-bold transition border border-slate-700" title="הגדל זום">🔍+</button>
+                    <button onclick="adjustZoom(-0.15)" id="zoomOutBtn" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-2.5 py-1.5 rounded-xl text-xs font-bold transition border border-slate-700" title="הקטן זום">🔍-</button>
+                    <button onclick="toggleMusic()" id="musicToggleBtn" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-2.5 py-1.5 rounded-xl text-xs font-bold transition border border-slate-700">🎵</button>
+                    <button onclick="toggleNightMode()" id="nightToggleBtn" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-2.5 py-1.5 rounded-xl text-xs font-bold transition border border-slate-700">🌙</button>
+                    <button onclick="shareCurrentPage()" id="shareBtn" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-2.5 py-1.5 rounded-xl text-xs font-bold transition border border-slate-700">🔗</button>
+                    <button onclick="toggleOverlays()" id="overlayToggleBtn" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-2.5 py-1.5 rounded-xl text-xs font-bold transition border border-slate-700">💬</button>
+                    <button onclick="toggleFullscreen()" id="fullscreenBtn" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-2.5 py-1.5 rounded-xl text-xs font-bold transition border border-slate-700">⛶</button>
+                    <button onclick="toggleWebtoonMode()" id="webtoonToggleBtn" class="bg-slate-800 hover:bg-slate-700 text-amber-400 border border-amber-500/30 px-3 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-1">📱 Webtoon</button>
+                    <button onclick="playSFX('click'); closeComic()" id="closeComicBtn" class="bg-rose-600 hover:bg-rose-500 text-white w-10 h-10 rounded-2xl flex items-center justify-center text-xl font-bold transition-all transform hover:scale-105 active:scale-95 shadow-lg">✕</button>
+                </div>
+            </div>
+
+            <div class="w-full bg-slate-950 h-1.5 relative overflow-hidden">
+                <div id="readingProgressBar" class="bg-gradient-to-r from-amber-400 via-rose-500 to-cyan-400 h-full w-0 transition-all duration-300"></div>
+            </div>
+
+            <div class="flex-grow p-2 md:p-4 flex flex-col items-center justify-center overflow-hidden relative bg-slate-950">
+                <div id="comicPageContainer" class="w-full h-full flex flex-col items-center justify-center relative overflow-hidden rounded-2xl"></div>
+            </div>
+
+            <div id="thumbnailsStripWrapper" class="bg-slate-950/90 border-t border-slate-800/80 px-4 py-2">
+                <div id="thumbnailsStrip" class="flex items-center gap-2 overflow-x-auto py-1 scrollbar-none justify-start md:justify-center"></div>
+            </div>
+
+            <div id="chapterCommunityBar" class="bg-slate-900 px-6 py-2 border-t border-slate-800 flex items-center justify-between text-xs">
+                <div class="flex items-center gap-2 text-amber-400 font-bold">
+                    <span data-i18n="ratePrompt">אהבת את הפרק? דרג:</span>
+                    <button onclick="rateChapter(1)" data-star="1" aria-label="1/5" class="star-btn hover:scale-125 transition">⭐</button>
+                    <button onclick="rateChapter(2)" data-star="2" aria-label="2/5" class="star-btn hover:scale-125 transition">⭐</button>
+                    <button onclick="rateChapter(3)" data-star="3" aria-label="3/5" class="star-btn hover:scale-125 transition">⭐</button>
+                    <button onclick="rateChapter(4)" data-star="4" aria-label="4/5" class="star-btn hover:scale-125 transition">⭐</button>
+                    <button onclick="rateChapter(5)" data-star="5" aria-label="5/5" class="star-btn hover:scale-125 transition">⭐</button>
+                </div>
+                <span id="ratingMsg" class="text-slate-400"></span>
+                <a id="feedbackLink" target="_blank" rel="noopener" class="hidden text-amber-400 hover:text-amber-300 font-bold underline decoration-dotted"></a>
+            </div>
+
+            <div id="modalFooterControls" class="bg-slate-950 px-6 py-3 flex items-center justify-between border-t border-slate-800/80">
+                <button onclick="prevPage()" class="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-xl font-bold transition-all text-sm flex items-center gap-2 active:scale-95 shadow-md">
+                    <span>◀</span>
+                    <span data-i18n="prev">עמוד קודם</span>
+                </button>
+                <span id="pageIndicatorText" class="comic-font text-xl md:text-2xl text-amber-400">עמוד 1 מתוך 15</span>
+                <button onclick="nextOrNextChapter()" id="nextPageBtn" class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl font-bold transition-all text-sm flex items-center gap-2 active:scale-95 shadow-md shadow-indigo-600/30">
+                    <span id="nextBtnLabel">עמוד הבא</span>
+                    <span>▶</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Trailer Video Modal -->
+    <div id="trailerModal" class="fixed inset-0 bg-slate-950/90 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-slate-900 border-2 border-indigo-500/50 rounded-3xl p-6 max-w-3xl w-full text-center flex flex-col items-center gap-4 relative shadow-2xl">
+            <button onclick="toggleTrailerModal()" class="absolute top-4 left-4 text-slate-400 hover:text-white text-xl font-bold z-10">✕</button>
+            <h3 class="comic-font text-3xl text-indigo-400" data-i18n="trailerModalTitle">🎬 SQUAD NOOBS — OFFICIAL TRAILER</h3>
+            <div class="w-full aspect-video bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden relative shadow-lg">
+                <video id="trailerVideo" controls preload="none" class="w-full h-full object-cover">
+                    <source src="trailer.mp4" type="video/mp4">
+                    הדפדפן שלך אינו תומך בנגן הווידאו.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Upgraded Interactive Merch Store Modal with Presale Badges -->
+    <div id="merchModal" class="fixed inset-0 bg-slate-950/90 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-slate-900 border-2 border-amber-500/50 rounded-3xl p-6 max-w-5xl w-full text-center flex flex-col items-center gap-6 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+            <button onclick="closeMerchModal()" class="absolute top-4 left-4 text-slate-400 hover:text-white text-xl font-bold">✕</button>
+            
+            <div class="flex flex-col items-center gap-1">
+                <h3 class="comic-font text-4xl text-amber-400" data-i18n="merchModalTitle">🛍️ SQUAD NOOBS OFFICIAL MERCH STORE</h3>
+                <p class="text-xs text-slate-400" data-i18n="merchModalSubtitle">הזמן מוצרים רשמיים ובלעדיים של חבורת הגיבורים</p>
+            </div>
+
+            <!-- Items Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full">
+                
+                <!-- 1. Shirt -->
+                <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800 flex flex-col items-center gap-3 hover:border-amber-500/50 transition">
+                    <span class="bg-amber-500/10 text-amber-400 text-[10px] px-2 py-0.5 rounded-md border border-amber-500/20 font-mono">מכירה מוקדמת</span>
+                    <div class="w-24 h-24 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center overflow-hidden p-2">
+                        <img src="shop/shirt.jpg" alt="חולצת Squad Noobs" class="w-full h-full object-contain">
+                    </div>
+                    <h4 class="font-bold text-slate-100 text-base">חולצת Squad Noobs</h4>
+                    <select id="size-shirt" class="bg-slate-900 text-xs text-slate-300 border border-slate-700 rounded-lg p-1.5 w-full">
+                        <option value="S">מידה: S</option>
+                        <option value="M">מידה: M</option>
+                        <option value="L">מידה: L</option>
+                        <option value="XL">מידה: XL</option>
+                    </select>
+                    <span class="text-sm text-amber-400 font-mono font-bold">₪99.00</span>
+                    <div class="flex items-center gap-3 bg-slate-900 border border-slate-800 rounded-xl px-3 py-1">
+                        <button onclick="updateCart('shirt', -1)" class="text-slate-400 hover:text-white font-bold text-base">-</button>
+                        <span id="count-shirt" class="text-xs font-mono font-bold text-slate-200">0</span>
+                        <button onclick="updateCart('shirt', 1)" class="text-slate-400 hover:text-white font-bold text-base">+</button>
+                    </div>
+                </div>
+
+                <!-- 2. Cap -->
+                <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800 flex flex-col items-center gap-3 hover:border-yellow-400/50 transition">
+                    <span class="bg-yellow-400/10 text-yellow-400 text-[10px] px-2 py-0.5 rounded-md border border-yellow-400/20 font-mono">במלאי - משלוח מהיר</span>
+                    <div class="w-24 h-24 rounded-2xl bg-yellow-400/10 border border-yellow-400/20 flex items-center justify-center overflow-hidden p-2">
+                        <img src="shop/cap.jpg" alt="כובע מצחיה מואר" class="w-full h-full object-contain">
+                    </div>
+                    <h4 class="font-bold text-slate-100 text-base">כובע מצחיה מואר</h4>
+                    <span class="text-xs text-slate-500 font-mono">One Size</span>
+                    <span class="text-sm text-yellow-300 font-mono font-bold">₪79.00</span>
+                    <div class="flex items-center gap-3 bg-slate-900 border border-slate-800 rounded-xl px-3 py-1">
+                        <button onclick="updateCart('cap', -1)" class="text-slate-400 hover:text-white font-bold text-base">-</button>
+                        <span id="count-cap" class="text-xs font-mono font-bold text-slate-200">0</span>
+                        <button onclick="updateCart('cap', 1)" class="text-slate-400 hover:text-white font-bold text-base">+</button>
+                    </div>
+                </div>
+
+                <!-- 3. Keychain -->
+                <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800 flex flex-col items-center gap-3 hover:border-indigo-400/50 transition">
+                    <span class="bg-indigo-400/10 text-indigo-300 text-[10px] px-2 py-0.5 rounded-md border border-indigo-400/20 font-mono">במלאי זמין</span>
+                    <div class="w-24 h-24 rounded-2xl bg-indigo-400/10 border border-indigo-400/20 flex items-center justify-center overflow-hidden p-2">
+                        <img src="shop/keychain.jpg" alt="מחזיק מפתחות החבורה" class="w-full h-full object-contain">
+                    </div>
+                    <h4 class="font-bold text-slate-100 text-base">מחזיק מפתחות לוגו</h4>
+                    <span class="text-xs text-slate-500 font-mono">מתכת איכותית</span>
+                    <span class="text-sm text-indigo-300 font-mono font-bold">₪39.00</span>
+                    <div class="flex items-center gap-3 bg-slate-900 border border-slate-800 rounded-xl px-3 py-1">
+                        <button onclick="updateCart('keychain', -1)" class="text-slate-400 hover:text-white font-bold text-base">-</button>
+                        <span id="count-keychain" class="text-xs font-mono font-bold text-slate-200">0</span>
+                        <button onclick="updateCart('keychain', 1)" class="text-slate-400 hover:text-white font-bold text-base">+</button>
+                    </div>
+                </div>
+
+                <!-- 4. Poster -->
+                <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800 flex flex-col items-center gap-3 hover:border-rose-400/50 transition">
+                    <span class="bg-rose-400/10 text-rose-300 text-[10px] px-2 py-0.5 rounded-md border border-rose-400/20 font-mono">במלאי זמין</span>
+                    <div class="w-24 h-24 rounded-2xl bg-rose-400/10 border border-rose-400/20 flex items-center justify-center overflow-hidden p-2">
+                        <img src="shop/poster.jpg" alt="פוסטר קומפקטי" class="w-full h-full object-contain">
+                    </div>
+                    <h4 class="font-bold text-slate-100 text-base">פוסטר גיבורי העל</h4>
+                    <span class="text-xs text-slate-500 font-mono">A3 מט איכותי</span>
+                    <span class="text-sm text-rose-300 font-mono font-bold">₪49.00</span>
+                    <div class="flex items-center gap-3 bg-slate-900 border border-slate-800 rounded-xl px-3 py-1">
+                        <button onclick="updateCart('poster', -1)" class="text-slate-400 hover:text-white font-bold text-base">-</button>
+                        <span id="count-poster" class="text-xs font-mono font-bold text-slate-200">0</span>
+                        <button onclick="updateCart('poster', 1)" class="text-slate-400 hover:text-white font-bold text-base">+</button>
+                    </div>
+                </div>
+
+                <!-- 5. Book -->
+                <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800 flex flex-col items-center gap-3 hover:border-cyan-400/50 transition sm:col-span-2 md:col-span-1">
+                    <span class="bg-cyan-400/10 text-cyan-300 text-[10px] px-2 py-0.5 rounded-md border border-cyan-400/20 font-mono">מכירה מוקדמת</span>
+                    <div class="w-24 h-24 rounded-2xl bg-cyan-400/10 border border-cyan-400/20 flex items-center justify-center overflow-hidden p-2">
+                        <img src="shop/book.jpg" alt="חוברת מודפסת (Vol. 1)" class="w-full h-full object-contain">
+                    </div>
+                    <h4 class="font-bold text-slate-100 text-base" data-i18n="item3Title">חוברת מודפסת (Vol. 1)</h4>
+                    <span class="text-xs text-slate-500 font-mono">כריכה קשה (פרקים 1-4)</span>
+                    <span class="text-sm text-cyan-300 font-mono font-bold">₪59.00</span>
+                    <div class="flex items-center gap-3 bg-slate-900 border border-slate-800 rounded-xl px-3 py-1">
+                        <button onclick="updateCart('book', -1)" class="text-slate-400 hover:text-white font-bold text-base">-</button>
+                        <span id="count-book" class="text-xs font-mono font-bold text-slate-200">0</span>
+                        <button onclick="updateCart('book', 1)" class="text-slate-400 hover:text-white font-bold text-base">+</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Coupon Input & Total Bar -->
+            <div class="w-full pt-4 border-t border-slate-800 flex flex-wrap items-center justify-between gap-4 bg-slate-950/60 p-4 rounded-2xl">
+                <div class="flex items-center gap-2 flex-1 max-w-xs">
+                    <input id="couponInput" type="text" placeholder="קוד קופון (למשל: NOOBS10)" class="bg-slate-900 border border-slate-700 text-xs rounded-xl p-2.5 text-slate-100 w-full">
+                    <button onclick="applyCoupon()" class="bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold px-4 py-2.5 rounded-xl text-xs transition border border-slate-700">החל</button>
+                </div>
+                <div class="text-right">
+                    <span class="text-xs text-slate-400" data-i18n="cartTotal">סה"כ בעגלה:</span>
+                    <div id="cartTotalSum" class="comic-font text-2xl text-amber-400">₪0.00</div>
+                    <div id="cartDiscountNote" class="hidden text-xs text-emerald-400 font-mono"></div>
+                </div>
+                <button onclick="openCartFromStore()" class="bg-gradient-to-r from-amber-500 to-rose-600 hover:from-amber-400 hover:to-rose-500 text-slate-950 font-black px-6 py-3 rounded-xl transition shadow-lg flex items-center gap-2 text-sm">
+                    <span data-i18n="checkoutBtn">מעבר לעגלת הקניות</span>
+                </button>
+            </div>
+            <div id="checkoutPanel" class="hidden w-full bg-slate-950/60 border border-slate-800 rounded-2xl p-4 grid gap-3 text-right"></div>
+        </div>
+    </div>
+
+    <!-- Slide-over Cart Drawer -->
+    <div id="cartDrawer" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex justify-end">
+        <div class="w-full max-w-md bg-slate-900 border-r border-slate-800 h-full flex flex-col p-6 shadow-2xl transform translate-x-full" id="cartDrawerContent">
+            <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+                <h3 class="comic-font text-2xl text-amber-400">🛒 עגלת הקניות שלך</h3>
+                <button onclick="toggleCartDrawer(false)" class="text-slate-400 hover:text-white text-xl font-bold p-1">✕</button>
+            </div>
+
+            <div id="drawerItemsList" class="flex-1 overflow-y-auto py-4 space-y-3"></div>
+
+            <div class="pt-4 border-t border-slate-800 space-y-3">
+                <div class="flex items-center gap-2">
+                    <input id="drawerCouponInput" type="text" placeholder="הכנס קוד קופון (למשל: NOOBS10)" class="bg-slate-950 border border-slate-700 text-xs rounded-xl p-2 text-slate-100 flex-1">
+                    <button onclick="applyDrawerCoupon()" class="bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold px-3 py-2 rounded-xl text-xs transition border border-slate-700">החל</button>
+                </div>
+                
+                <div class="flex justify-between items-center text-sm">
+                    <span class="text-slate-400">סכום ביניים:</span>
+                    <span id="drawerSubtotal" class="font-mono text-slate-200">₪0.00</span>
+                </div>
+                
+                <div id="drawerDiscountRow" class="hidden flex justify-between items-center text-sm">
+                    <span id="drawerDiscountLabel" class="text-emerald-400">הנחת קופון:</span>
+                    <span id="drawerDiscountSum" class="font-mono text-emerald-400">-₪0.00</span>
+                </div>
+
+                <div class="flex justify-between items-center text-sm">
+                    <span class="text-slate-400">משלוח:</span>
+                    <span id="drawerShippingSum" class="font-mono text-slate-200">₪0.00</span>
+                </div>
+                
+                <div class="flex justify-between items-center text-lg font-bold pt-2 border-t border-slate-800">
+                    <span class="text-slate-300">סה"כ לתשלום:</span>
+                    <span id="drawerTotalSum" class="comic-font text-2xl text-amber-400">₪0.00</span>
+                </div>
+
+                <button onclick="proceedToCheckoutFromDrawer()" class="w-full bg-gradient-to-r from-amber-500 to-rose-600 hover:from-amber-400 hover:to-rose-500 text-slate-950 font-black py-3 rounded-xl transition shadow-lg text-sm">
+                    מעבר לתשלום ומשלוח (Bit / Email) 🚀
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Cart Button -->
+    <button onclick="toggleCartDrawer(true)" class="fixed bottom-6 right-6 bg-amber-500 hover:bg-amber-400 text-slate-950 p-4 rounded-full shadow-2xl z-40 flex items-center gap-2 font-bold transition transform hover:scale-105">
+        <span id="floatingCartCount" class="bg-slate-950 text-amber-400 text-xs px-2 py-0.5 rounded-full font-mono">0</span>
+    </button>
+
+    <!-- Footer -->
+    <footer class="w-full max-w-6xl mx-auto text-center mt-12 mb-4 text-slate-500 text-xs font-semibold flex flex-col items-center gap-4">
+        
+        <!-- Newsletter Box -->
+        <div class="w-full max-w-md mx-auto p-4 bg-slate-900/80 border border-slate-800 rounded-2xl flex flex-col items-center gap-3 shadow-xl">
+            <h4 class="font-bold text-amber-400 text-sm">📬 הישארו מעודכנים בפרקים חדשים</h4>
+            <div class="flex gap-2 w-full">
+                <input id="newsletterEmail" type="email" placeholder="הכנס את האימייל שלך..." class="bg-slate-950 border border-slate-700 text-xs rounded-xl px-3 py-2 flex-1 text-slate-100 focus:outline-none focus:border-amber-500">
+                <button onclick="subscribeNewsletter()" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-black px-4 py-2 rounded-xl text-xs transition">הירשם</button>
+            </div>
+        </div>
+
+        <div class="h-0.5 w-full max-w-md bg-gradient-to-r from-transparent via-slate-800 to-transparent my-1"></div>
+        <p>&copy; 2026 IDL - Squad Noobs. <span data-i18n="rights">כל הזכויות שמורות.</span></p>
+        <p class="flex gap-4 flex-wrap justify-center">
+            <a href="characters.html" class="hover:text-slate-300 underline" data-i18n="chars">דמויות ויקום</a>
+            <a href="faq.html" class="hover:text-slate-300 underline" data-i18n="faq">שאלות נפוצות</a><a href="support.html" class="hover:text-slate-300 underline" data-i18n="support">תמכו בנו</a>
+            <a href="privacy.html" class="hover:text-slate-300 underline" data-i18n="privacy">מדיניות פרטיות</a>
+            <a href="terms.html" class="hover:text-slate-300 underline" data-i18n="terms">תנאי שימוש</a>
+            <a href="accessibility.html" class="hover:text-slate-300 underline" data-i18n="a11y">הצהרת נגישות</a>
+        </p>
+    </footer>
+
+    <!-- Chapter data -->
+    <script src="data/chapter1.js"></script>
+    <script src="data/chapter2.js"></script>
+    <script src="data/chapter3.js"></script>
+    <script src="data/chapter4.js"></script>
+
+    <script>
+        let audioEnabled = true;
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+        function playSFX(type) {
+            if (!audioEnabled) return;
+            if (audioCtx.state === 'suspended') audioCtx.resume();
+            try {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+
+                if (type === 'click') {
+                    osc.frequency.setValueAtTime(400, audioCtx.currentTime);
+                    osc.frequency.exponentialRampToValueAtTime(800, audioCtx.currentTime + 0.05);
+                    gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.05);
+                    osc.start();
+                    osc.stop(audioCtx.currentTime + 0.05);
+                } else if (type === 'powerup') {
+                    osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+                    osc.frequency.exponentialRampToValueAtTime(600, audioCtx.currentTime + 0.2);
+                    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.2);
+                    osc.start();
+                    osc.stop(audioCtx.currentTime + 0.2);
+                }
+            } catch (e) {}
+        }
+
+        function toggleAudio() {
+            audioEnabled = !audioEnabled;
+            setAudioIcon();
+        }
+
+        const canvas = document.getElementById('particleCanvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 1;
+                this.speedX = Math.random() * 0.8 - 0.4;
+                this.speedY = Math.random() * -0.8 - 0.2;
+                this.opacity = Math.random() * 0.5 + 0.2;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.y < 0) this.y = canvas.height;
+                if (this.x < 0 || this.x > canvas.width) this.x = Math.random() * canvas.width;
+            }
+            draw() {
+                ctx.fillStyle = '#f59e0b';
+                ctx.globalAlpha = this.opacity;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        for (let i = 0; i < 35; i++) particles.push(new Particle());
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => { p.update(); p.draw(); });
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedChapter = localStorage.getItem('squad_last_chapter');
+            const savedPage = localStorage.getItem('squad_last_page');
+            if (savedChapter) {
+                const banner = document.getElementById('resumeBanner');
+                const text = document.getElementById('resumeText');
+                text.innerText = `${L('המשך מהמקום שעזבת', 'Continue where you left off')} (${savedChapter} - ${L('עמוד', 'Page')} ${parseInt(savedPage)+1})`;
+                banner.classList.remove('hidden');
+            }
+        });
+
+        function resumeReading() {
+            const savedChapter = localStorage.getItem('squad_last_chapter') || 'CHAPTER1';
+            const savedPage = parseInt(localStorage.getItem('squad_last_page') || '0');
+            openComic(savedChapter, savedPage);
+        }
+
+        function getChapterRating() {
+            if (!currentHero) return 0;
+            try { return parseInt(localStorage.getItem('squad_rating_' + currentHero.id) || '0', 10) || 0; } catch (e) { return 0; }
+        }
+
+        function updateRatingUI() {
+            const rating = getChapterRating();
+            document.querySelectorAll('#chapterCommunityBar .star-btn').forEach(btn => {
+                const lit = rating > 0 && parseInt(btn.dataset.star, 10) <= rating;
+                btn.style.opacity = rating === 0 ? '0.6' : (lit ? '1' : '0.25');
+                btn.style.filter = rating === 0 || lit ? 'none' : 'grayscale(1)';
+                btn.setAttribute('aria-pressed', lit ? 'true' : 'false');
+            });
+            const msg = document.getElementById('ratingMsg');
+            if (msg) {
+                msg.innerText = rating ? (currentLang === 'HE' ? `תודה על הדירוג! (${rating}/5)` : `Thanks for rating! (${rating}/5)`) : '';
+            }
+        }
+
+        function rateChapter(stars) {
+            if (!currentHero) return;
+            playSFX('click');
+            try { localStorage.setItem('squad_rating_' + currentHero.id, String(stars)); } catch (e) {}
+            updateRatingUI();
+        }
+
+        document.querySelectorAll('.tilt-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                card.style.transform = `perspective(1000px) rotateX(${-y / 25}deg) rotateY(${x / 25}deg) scale3d(1.02, 1.02, 1.02)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+            });
+        });
+
+        let currentLang = 'HE';
+        const L = (he, en) => (currentLang === 'HE' ? he : en);
+        const escAttr = (t) => String(t == null ? '' : t).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+        const i18n = {
+            HE: {
+                subtitle: 'לחץ על אחד הגיבורים כדי לפתוח את חוברת הקומיקס המלאה!',
+                trailer: 'טריילר קומיקס',
+                game: 'שחקו במשחק',
+                merch: 'חנות מוצרים',
+                chars: 'דמויות ויקום',
+                about: 'אודות החבורה',
+                faq: 'שאלות נפוצות',
+                support: 'תמכו בנו',
+                tick1: 'פרק 5 בתהליך הכנה!',
+                tick2: 'מבצע מכירה מוקדמת בעיצומו על החולצות והחוברות המודפסות!',
+                tick3: 'הצטרפו לשרת הדיסקורד הרשמי לעדכונים בלעדיים!',
+                tick4: 'כרך 1 שלם: 4 פרקים, 60 עמודים, והכול לקריאה בחינם!',
+                tick5: 'שחקו במשחק של החבורה!',
+                privacy: 'מדיניות פרטיות',
+                terms: 'תנאי שימוש',
+                a11y: 'הצהרת נגישות',
+                prev: 'עמוד קודם',
+                next: 'עמוד הבא',
+                resumeBtn: 'המשך לקרוא 📖',
+                readCh1: '📖 קרא את פרק 1 (15 עמודים)',
+                ch1Title: 'CHAPTER 1 — לידת הכוחות',
+                ch1Desc: 'הלידה בבית החולים, המפגש בבית הקפה, השיחה המאיימת מהמספר החסוי והתפרצות הכוחות הראשונה בשולחן.',
+                ch1Focus: 'פוקוס: 📖 פרק הפתיחה והחשיפה',
+                readCh2: '📖 קרא את פרק 2 (15 עמודים)',
+                ch2Title: 'CHAPTER 2 — הדירה',
+                ch2Desc: 'החיים הכפולים במפקדה, קניית התכשיטים בקניון, המדפסת בתלת-ממד, והדיפת הפורצים בלילה על ידי רוני.',
+                ch2Focus: 'פוקוס: 🔬 התארגנות המפקדה ועימות בדירה',
+                readCh3: '📖 קרא את פרק 3 (15 עמודים)',
+                ch3Title: 'CHAPTER 3 — כאוס בעיר',
+                ch3Desc: 'פענוח הנתונים במעבדה, הטורנדו והברקים בשמיים, וההגנה על הרחובות מול המתקפה השמימית.',
+                ch3Focus: 'פוקוס: 🚀 איום מהשמיים ולחימה עירונית',
+                readCh4: '📖 קרא את פרק 4 (15 עמודים)',
+                ch4Title: 'CHAPTER 4 — מלחמת הפסגה',
+                ch4Desc: 'עימות חזיתי מול מנהיג ארגון הצללים, שילוב כוחות אפי בראשות עידן, והניצחון הגדול של Squad Noobs!',
+                ch4Focus: 'פוקוס: ⚔️ עימות המנהיגים והקרב הכולל',
+                pagesCount: '15 עמודים 📖',
+                comingBadge: 'בקרוב באתר',
+                comingTitle: '⚡ עוד פרקים נוספים בקרוב... 🚀',
+                comingDesc: 'ההרפתקה של Squad Noobs רק התחילה! הכן את עצמך לפרקים הבאים בסדרה.',
+                discordTitle: '💬 הצטרפו לקהילת המעריצים שלנו!',
+                discordDesc: 'רוצים לדבר על הפרקים, לראות סקיצות סודיות ולהכיר עוד מעריצים? היכנסו לערוץ הדיסקורד.',
+                discordBtn: 'היכנס לשרת הדיסקורד',
+                fullComicBadge: 'קומיקס מלא',
+                trailerModalTitle: '🎬 SQUAD NOOBS — OFFICIAL TRAILER',
+                merchModalTitle: '🛍️ SQUAD NOOBS OFFICIAL MERCH STORE',
+                merchModalSubtitle: 'הזמן מוצרים רשמיים ובלעדיים של חבורת הגיבורים',
+                item1Title: 'חולצת Squad Noobs',
+                item2Title: 'כובע מצחיה מואר',
+                item3Title: 'חוברת מודפסת (Vol. 1)',
+                cartTotal: 'סה"כ בעגלה:',
+                checkoutBtn: 'מעבר לעגלת הקניות',
+                ratePrompt: 'אהבת את הפרק? דרג:',
+                ratingThanks: 'תודה על הדירוג!',
+                rights: 'כל הזכויות שמורות.'
+            },
+            EN: {
+                subtitle: 'Click on any hero card to open the full comic book universe!',
+                trailer: 'Comic Trailer',
+                game: 'Play the Game',
+                merch: 'Merch Store',
+                chars: 'Characters & Universe',
+                about: 'About Squad',
+                faq: 'FAQ',
+                support: 'Support Us',
+                tick1: 'Chapter 5 is in the works!',
+                tick2: 'Early-bird sale is on for printed shirts and booklets!',
+                tick3: 'Join the official Discord server for exclusive updates!',
+                tick4: 'Volume 1 is complete: 4 chapters, 60 pages, all free to read!',
+                tick5: 'Play the Squad Noobs game!',
+                privacy: 'Privacy Policy',
+                terms: 'Terms of Use',
+                a11y: 'Accessibility Statement',
+                prev: 'Previous',
+                next: 'Next',
+                resumeBtn: 'Continue Reading 📖',
+                readCh1: '📖 Read Chapter 1 (15 Pages)',
+                ch1Title: 'CHAPTER 1 — Birth of Powers',
+                ch1Desc: 'Birth in the hospital, reunion at the coffee shop, the mysterious call, and the initial outbreak of powers.',
+                ch1Focus: 'Focus: 📖 Origin & Awakening',
+                readCh2: '📖 Read Chapter 2 (15 Pages)',
+                ch2Title: 'CHAPTER 2 — The Headquarters',
+                ch2Desc: 'Double life at HQ, jewelry shopping, 3D printing lab, and Roni repelling intruders at night.',
+                ch2Focus: 'Focus: 🔬 Base Ops & Apartment Defense',
+                readCh3: '📖 Read Chapter 3 (15 Pages)',
+                ch3Title: 'CHAPTER 3 — Chaos in the City',
+                ch3Desc: 'Decoding alien data, tornadoes and lightning in the sky, and defending the streets against invasion.',
+                ch3Focus: 'Focus: 🚀 Sky Attack & Urban Combat',
+                readCh4: '📖 Read Chapter 4 (15 Pages)',
+                ch4Title: 'CHAPTER 4 — War of the Summit',
+                ch4Desc: 'Showdown with the Shadow Organization leader, epic synergy led by Idan, and the grand victory!',
+                ch4Focus: 'Focus: ⚔️ Final Climax & Boss Battle',
+                pagesCount: '15 Pages 📖',
+                comingBadge: 'Coming Soon',
+                comingTitle: '⚡ More Chapters Coming Soon... 🚀',
+                comingDesc: 'The Squad Noobs journey has just begun! Stay tuned for upcoming issues.',
+                discordTitle: '💬 Join Our Fan Community!',
+                discordDesc: 'Want to talk about chapters, see secret sketches, and meet other fans? Enter our Discord server.',
+                discordBtn: 'Enter Discord Server',
+                fullComicBadge: 'Full Issue',
+                trailerModalTitle: '🎬 SQUAD NOOBS — OFFICIAL TRAILER',
+                merchModalTitle: '🛍️ SQUAD NOOBS OFFICIAL MERCH STORE',
+                merchModalSubtitle: 'Order official and exclusive gear from the hero squad',
+                item1Title: 'Squad Noobs T-Shirt',
+                item2Title: 'Light-Up Cyber Cap',
+                item3Title: 'Printed Comic Book (Vol. 1)',
+                cartTotal: 'Cart Total:',
+                checkoutBtn: 'Go to Cart',
+                ratePrompt: 'Liked the chapter? Rate:',
+                ratingThanks: 'Thanks for rating!',
+                rights: 'All rights reserved.'
+            }
+        };
+
+        function toggleLang() {
+            currentLang = currentLang === 'HE' ? 'EN' : 'HE';
+            document.getElementById('langBtnText').innerText = currentLang === 'HE' ? 'EN' : 'HE';
+            document.dir = currentLang === 'HE' ? 'rtl' : 'ltr';
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (i18n[currentLang][key]) {
+                    el.innerText = i18n[currentLang][key];
+                }
+            });
+            updateRatingUI();
+            updateWebtoonBtn();
+            applyStaticLabels();
+            updateNextButton();
+            stripEmoji(document.body);
+            applyStock();
+            const modal = document.getElementById('comicModal');
+            if (currentHero && modal && !modal.classList.contains('hidden')) renderPage();
+        }
+
+        // --- Cart, Shipping, Coupon & Checkout Logic (Privacy Upgraded) ---
+        const cart = { shirt: 0, cap: 0, keychain: 0, poster: 0, book: 0 };
+        const prices = { shirt: 99, cap: 79, keychain: 39, poster: 49, book: 59 };
+        const itemNames = {
+            shirt: { HE: 'חולצה', EN: 'Shirt' }, cap: { HE: 'כובע', EN: 'Cap' },
+            keychain: { HE: 'מחזיק מפתחות', EN: 'Keychain' }, poster: { HE: 'פוסטר', EN: 'Poster' },
+            book: { HE: 'חוברת', EN: 'Book' }
+        };
+
+        const BIT_LINK = 'https://www.bitpay.co.il/app/share-info?i=-EQ5BefK&j=true'; // קישור Bit לתשלום
+        const BUSINESS_EMAIL = 'idlofficialhq@gmail.com'; // מייל עסקי ייעודי
+        let shippingCost = 0; 
+        let appliedDiscount = 0; 
+
+        var STOCK = { shirt: 'presale', cap: 'in', keychain: 'in', poster: 'in', book: 'presale' };
+
+        function canBuy(item) {
+            return !STOCK || !['soon', 'out'].includes(STOCK[item]);
+        }
+
+        function applyStock() {
+            if (!STOCK) return;
+            const he = currentLang === 'HE';
+            const labels = { soon: he ? 'בקרוב' : 'Coming soon', out: he ? 'אזל מהמלאי' : 'Sold out' };
+            Object.keys(STOCK).forEach(item => {
+                const countEl = document.getElementById(`count-${item}`);
+                const card = countEl && countEl.closest('.rounded-2xl');
+                if (!card || canBuy(item)) return;
+                const badge = card.querySelector('span');
+                badge.textContent = labels[STOCK[item]];
+                badge.className = 'bg-slate-700/40 text-slate-300 text-[10px] px-2 py-0.5 rounded-md border border-slate-600 font-mono';
+                card.classList.add('opacity-60');
+                card.querySelectorAll('button[onclick^="updateCart"]').forEach(b => {
+                    b.disabled = true; b.setAttribute('aria-disabled', 'true'); b.classList.add('cursor-not-allowed');
+                });
+                const sel = card.querySelector('select');
+                if (sel) sel.disabled = true;
+                if (cart[item]) { cart[item] = 0; countEl.innerText = 0; calculateTotal(); updateCartDrawerUI(); }
+            });
+        }
+
+        function updateCart(item, delta) {
+            if (delta > 0 && !canBuy(item)) return;
+            playSFX('click');
+            cart[item] = Math.max(0, (cart[item] || 0) + delta);
+            
+            const countEl = document.getElementById(`count-${item}`);
+            if (countEl) countEl.innerText = cart[item];
+            
+            calculateTotal();
+            updateCartDrawerUI();
+            
+            if (delta > 0) {
+                toggleCartDrawer(true);
+            }
+        }
+
+        function openCartFromStore() {
+            playSFX('click');
+            closeMerchModal();
+            toggleCartDrawer(true);
+        }
+
+        function rawSubtotal() {
+            return Object.keys(prices).reduce((sum, k) => sum + (cart[k] || 0) * prices[k], 0);
+        }
+
+        function discountAmount() {
+            return rawSubtotal() * appliedDiscount;
+        }
+
+        function subtotalOrder() {
+            let rawSum = Object.keys(prices).reduce((sum, k) => sum + (cart[k] || 0) * prices[k], 0);
+            return rawSum * (1 - appliedDiscount);
+        }
+
+        function orderTotal() {
+            return subtotalOrder() + (subtotalOrder() > 0 ? shippingCost : 0);
+        }
+
+        function calculateTotal() {
+            const total = orderTotal();
+            const sumEl = document.getElementById('cartTotalSum');
+            if (sumEl) sumEl.innerText = `₪${total.toFixed(2)}`;
+            const noteEl = document.getElementById('cartDiscountNote');
+            if (noteEl) {
+                const off = discountAmount();
+                noteEl.classList.toggle('hidden', !(off > 0));
+                noteEl.innerText = (currentLang === 'HE' ? 'הנחת קופון: ' : 'Coupon discount: ') + `-₪${off.toFixed(2)}`;
+            }
+        }
+
+        function applyCoupon() {
+            playSFX('click');
+            const codeInput = document.getElementById('couponInput');
+            const code = codeInput ? codeInput.value.trim().toUpperCase() : '';
+            
+            if (code === 'NOOBS10' || code === 'SQUAD10') {
+                appliedDiscount = 0.10; 
+                alert(currentLang === 'HE' ? `קופון הופעל בהצלחה! 10% הנחה, חיסכון של ₪${discountAmount().toFixed(2)}.` : `Coupon applied! 10% off, you save ₪${discountAmount().toFixed(2)}.`);
+            } else {
+                appliedDiscount = 0;
+                alert(currentLang === 'HE' ? 'קופון שגוי או פג תוקף.' : 'Invalid or expired coupon.');
+            }
+            calculateTotal();
+            updateCartDrawerUI();
+        }
+
+        function applyDrawerCoupon() {
+            playSFX('click');
+            const codeInput = document.getElementById('drawerCouponInput');
+            const code = codeInput ? codeInput.value.trim().toUpperCase() : '';
+            
+            if (code === 'NOOBS10' || code === 'SQUAD10') {
+                appliedDiscount = 0.10; 
+                alert(currentLang === 'HE' ? 'קופון הופעל בהצלחה! 10% הנחה נוספו לעגלה.' : 'Coupon applied successfully! 10% off.');
+            } else {
+                appliedDiscount = 0;
+                alert(currentLang === 'HE' ? 'קוד קופון שגוי או פג תוקף.' : 'Invalid or expired coupon.');
+            }
+            calculateTotal();
+            updateCartDrawerUI();
+        }
+
+        function subscribeNewsletter() {
+            playSFX('powerup');
+            const emailInput = document.getElementById('newsletterEmail');
+            const email = emailInput ? emailInput.value.trim() : '';
+            if (!email || !email.includes('@')) {
+                alert(currentLang === 'HE' ? 'נא להכניס כתובת אימייל תקינה.' : 'Please enter a valid email address.');
+                return;
+            }
+            alert(currentLang === 'HE' ? 'תודה שנרשמת לניוזלטר של Squad Noobs! 🚀' : 'Thanks for subscribing to Squad Noobs newsletter! 🚀');
+            if (emailInput) emailInput.value = '';
+        }
+
+        function toggleCartDrawer(open) {
+            playSFX('click');
+            const drawer = document.getElementById('cartDrawer');
+            const content = document.getElementById('cartDrawerContent');
+            
+            if (open) {
+                drawer.classList.remove('hidden');
+                setTimeout(() => content.classList.remove('translate-x-full'), 10);
+            } else {
+                content.classList.add('translate-x-full');
+                setTimeout(() => drawer.classList.add('hidden'), 300);
+            }
+            updateCartDrawerUI();
+        }
+
+        function updateCartDrawerUI() {
+            const listEl = document.getElementById('drawerItemsList');
+            const subtotalEl = document.getElementById('drawerSubtotal');
+            const shippingEl = document.getElementById('drawerShippingSum');
+            const totalEl = document.getElementById('drawerTotalSum');
+            const floatingCountEl = document.getElementById('floatingCartCount');
+            const lang = currentLang === 'HE' ? 'HE' : 'EN';
+            
+            let html = '';
+            
+            Object.keys(prices).forEach(k => {
+                if (cart[k] > 0) {
+                    const itemPrice = cart[k] * prices[k];
+                    const sizeSelect = document.getElementById(`size-${k}`) || document.getElementById(`size-shirt`);
+                    const size = (k === 'shirt' && sizeSelect) ? ` (${sizeSelect.value})` : '';
+                    
+                    html += `
+                        <div class="flex items-center justify-between bg-slate-950 p-3 rounded-xl border border-slate-800">
+                            <div>
+                                <h5 class="font-bold text-slate-100 text-sm">${itemNames[k][lang]}${size}</h5>
+                                <span class="text-xs text-amber-400 font-mono">₪${prices[k]} x ${cart[k]} = ₪${itemPrice}</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-slate-900 border border-slate-800 rounded-lg px-2 py-1">
+                                <button onclick="updateCart('${k}', -1)" class="text-slate-400 hover:text-white font-bold text-sm px-1">-</button>
+                                <span class="text-xs font-mono text-slate-200">${cart[k]}</span>
+                                <button onclick="updateCart('${k}', 1)" class="text-slate-400 hover:text-white font-bold text-sm px-1">+</button>
+                            </div>
+                        </div>
+                    `;
+                }
+            });
+            
+            if (html === '') {
+                html = `<p class="text-slate-500 text-center py-8">${lang === 'HE' ? 'העגלה שלך ריקה כרגע.' : 'Your cart is currently empty.'}</p>`;
+            }
+            
+            if (listEl) listEl.innerHTML = html;
+            if (subtotalEl) subtotalEl.innerText = `₪${rawSubtotal().toFixed(2)}`;
+            
+            const discRow = document.getElementById('drawerDiscountRow');
+            if (discRow) {
+                const off = discountAmount();
+                discRow.classList.toggle('hidden', !(off > 0));
+                const discountPercent = Math.round(appliedDiscount * 100);
+                document.getElementById('drawerDiscountLabel').innerText = lang === 'HE' ? `הנחת קופון (${discountPercent}%):` : `Coupon Discount (${discountPercent}%):`;
+                document.getElementById('drawerDiscountSum').innerText = `-₪${off.toFixed(2)}`;
+            }
+            
+            if (shippingEl) shippingEl.innerText = `₪${shippingCost}.00`;
+            if (totalEl) totalEl.innerText = `₪${orderTotal().toFixed(2)}`;
+            if (floatingCountEl) floatingCountEl.innerText = Object.values(cart).reduce((a, b) => a + b, 0);
+        }
+
+        function proceedToCheckoutFromDrawer() {
+            toggleCartDrawer(false);
+            openMerchModal();
+            setTimeout(() => { checkoutCart(); }, 200);
+        }
+
+        function orderSummary() {
+            const lang = currentLang === 'HE' ? 'HE' : 'EN';
+            const size = document.getElementById('size-shirt')?.value || 'S';
+            let summary = Object.keys(prices).filter(k => cart[k] > 0).map(k =>
+                `${itemNames[k][lang]}${k === 'shirt' ? ` (${size})` : ''} x${cart[k]}`
+            ).join('\n');
+            
+            const shippingName = shippingCost === 35 ? (lang === 'HE' ? 'שליח עד הבית (₪35)' : 'Home Delivery (₪35)') : (lang === 'HE' ? 'איסוף עצמי (חינם)' : 'Self Pickup (Free)');
+            summary += `\n📦 משלוח: ${shippingName}`;
+            if (appliedDiscount > 0) summary += `\n🎟️ ${lang === 'HE' ? 'הנחת קופון' : 'Coupon discount'}: ${Math.round(appliedDiscount * 100)}% (-₪${discountAmount().toFixed(2)})`;
+            return summary;
+        }
+
+        function checkoutCart() {
+            playSFX('powerup');
+            const he = currentLang === 'HE';
+            const total = orderTotal();
+            if (total === 0) {
+                alert(he ? 'העגלה שלך ריקה! בחר מוצרים קודם.' : 'Your cart is empty! Please select items first.');
+                return;
+            }
+
+            const savedName = localStorage.getItem('squad_customer_name') || '';
+            const savedAddr = localStorage.getItem('squad_customer_addr') || '';
+
+            const f = 'bg-slate-900 border border-slate-700 rounded-lg p-2 text-sm text-slate-100 w-full';
+            const panel = document.getElementById('checkoutPanel');
+            panel.innerHTML = `
+                <h4 class="font-bold text-amber-400">${he ? 'פרטי הזמנה ותשלום' : 'Order & payment details'}</h4>
+                <pre class="text-xs text-slate-300 whitespace-pre-wrap font-sans">${orderSummary()}\n${he ? 'סה"כ לתשלום' : 'Total'}: ₪${total.toFixed(2)}</pre>
+                
+                <div class="flex items-center gap-4 text-xs text-slate-300 py-2">
+                    <label class="flex items-center gap-1 cursor-pointer">
+                        <input type="radio" name="shippingMethod" value="0" ${shippingCost === 0 ? 'checked' : ''} onchange="setShipping(0)">
+                        ${he ? 'איסוף עצמי (חינם)' : 'Self Pickup (Free)'}
+                    </label>
+                    <label class="flex items-center gap-1 cursor-pointer">
+                        <input type="radio" name="shippingMethod" value="35" ${shippingCost === 35 ? 'checked' : ''} onchange="setShipping(35)">
+                        ${he ? 'שליח עד הבית (₪35)' : 'Home Delivery (₪35)'}
+                    </label>
+                </div>
+
+                <input id="co-name" class="${f}" placeholder="${he ? 'שם מלא' : 'Full name'}" value="${savedName}" autocomplete="name">
+                <textarea id="co-addr" rows="2" class="${f}" placeholder="${he ? 'כתובת למשלוח' : 'Shipping address'}" autocomplete="street-address">${savedAddr}</textarea>
+                
+                <button onclick="payWithBit()" class="bg-sky-500 hover:bg-sky-400 text-slate-950 font-black px-4 py-3 rounded-xl text-sm transition">${he ? '1. שלם ₪' + total.toFixed(2) + ' ב-Bit' : '1. Pay ₪' + total.toFixed(2) + ' with Bit'}</button>
+                <button onclick="sendOrderEmail()" class="bg-indigo-600 hover:bg-indigo-500 text-white font-black px-4 py-3 rounded-xl text-sm transition">${he ? '2. שלח פרטי הזמנה למייל העסקי' : '2. Send order details to business email'}</button>
+                <p class="text-[11px] text-slate-500">${he ? 'ההזמנה תטופל מול המייל העסקי לאחר התשלום.' : 'Your order will be processed via business email after payment.'}</p>`;
+            panel.classList.remove('hidden');
+            panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function setShipping(cost) {
+            shippingCost = cost;
+            calculateTotal();
+            updateCartDrawerUI();
+            const panel = document.getElementById('checkoutPanel');
+            if (panel && !panel.classList.contains('hidden')) {
+                const pre = panel.querySelector('pre');
+                if (pre) {
+                    const he = currentLang === 'HE';
+                    pre.innerText = `${orderSummary()}\n${he ? 'סה"כ לתשלום' : 'Total'}: ₪${orderTotal().toFixed(2)}`;
+                }
+            }
+        }
+
+        function getCustomer() {
+            const name = document.getElementById('co-name')?.value.trim() || '';
+            const addr = document.getElementById('co-addr')?.value.trim() || '';
+
+            if (!name || !addr) {
+                alert(currentLang === 'HE' ? 'נא למלא שם וכתובת למשלוח.' : 'Please fill in name and shipping address.');
+                return null;
+            }
+
+            try {
+                localStorage.setItem('squad_customer_name', name);
+                localStorage.setItem('squad_customer_addr', addr);
+            } catch (e) {}
+
+            return { name, addr };
+        }
+
+        function payWithBit() {
+            const he = currentLang === 'HE';
+            if (!getCustomer()) return;
+            const finalAmount = orderTotal();
+            
+            if (BIT_LINK.includes('https://www.bitpay.co.il/app/share-info?i=-EQ5BefK&j=true')) {
+                alert(he ? 'קישור Bit עדיין לא הוגדר באתר.' : 'The Bit link has not been set up yet.');
+                return;
+            }
+            
+            alert(he ? `בדף Bit הזן את הסכום הסופי לתשלום: ₪${finalAmount.toFixed(2)}` : `Enter the final total amount of ₪${finalAmount.toFixed(2)} on the Bit page.`);
+            window.open(BIT_LINK, '_blank', 'noopener');
+        }
+
+        function sendOrderEmail() {
+            const he = currentLang === 'HE';
+            const c = getCustomer();
+            if (!c) return;
+            
+            const subject = encodeURIComponent(he ? "הזמנה חדשה מקומיקס Squad Noobs" : "New order from Squad Noobs comic");
+            const body = encodeURIComponent(
+                `${he ? 'פרטי ההזמנה' : 'Order Details'}:\n${orderSummary()}\n\n` +
+                `${he ? 'סה"כ לתשלום' : 'Total'}: ₪${orderTotal().toFixed(2)}\n\n` +
+                `${he ? 'שם' : 'Name'}: ${c.name}\n` +
+                `${he ? 'כתובת' : 'Address'}: ${c.addr}\n`
+            );
+            
+            window.location.href = `mailto:${BUSINESS_EMAIL}?subject=${subject}&body=${body}`;
+            try { sessionStorage.setItem('sn_last_order', JSON.stringify({ name: c.name, items: orderSummary(), total: orderTotal() })); } catch (e) {}
+        }
+
+        function toggleTrailerModal() {
+            const modal = document.getElementById('trailerModal');
+            const video = document.getElementById('trailerVideo');
+            modal.classList.toggle('hidden');
+            if (modal.classList.contains('hidden')) {
+                if (video) { video.pause(); video.currentTime = 0; }
+            } else {
+                if (video) { video.play().catch(() => {}); }
+            }
+        }
+
+        function openMerchModal() {
+            document.getElementById('merchModal').classList.remove('hidden');
+        }
+
+        function closeMerchModal() {
+            document.getElementById('merchModal').classList.add('hidden');
+            document.getElementById('checkoutPanel').classList.add('hidden');
+        }
+
+        let isWebtoonMode = false;
+        try { isWebtoonMode = localStorage.getItem('squad_webtoon_mode') === '1'; } catch (e) {}
+        let currentZoom = 1.0;
+
+        function updateWebtoonBtn() {
+            const btn = document.getElementById('webtoonToggleBtn');
+            if (!btn) return;
+            btn.innerText = isWebtoonMode ? (currentLang === 'HE' ? "מצגות" : "Slides") : "Webtoon";
+        }
+
+        function toggleWebtoonMode() {
+            playSFX('click');
+            isWebtoonMode = !isWebtoonMode;
+            try { localStorage.setItem('squad_webtoon_mode', isWebtoonMode ? '1' : '0'); } catch (e) {}
+            updateWebtoonBtn();
+            renderPage();
+        }
+
+        function adjustZoom(delta) {
+            playSFX('click');
+            currentZoom = Math.min(Math.max(0.7, currentZoom + delta), 1.6);
+            const panel = document.querySelector('.zoomable-panel');
+            if (panel) panel.style.transform = `scale(${currentZoom})`;
+        }
+
+        const SHARE_VIA_PAGES = true;
+        const FEEDBACK_URL = '';
+        const MUSIC_FILES = {};
+
+        const chapterData = window.COMIC_DATA || {};
+        const heroesMap = {};
+        const comicStories = {};
+        Object.keys(chapterData)
+            .sort((a, b) => parseInt(a.replace(/\D/g, ''), 10) - parseInt(b.replace(/\D/g, ''), 10))
+            .forEach(key => {
+                heroesMap[key] = Object.assign({ id: key }, chapterData[key].meta);
+                comicStories[key] = chapterData[key].pages;
+            });
+
+        const speakerStyles = {
+            'עידן': { border: 'border-amber-500', text: 'text-amber-600', badge: 'bg-amber-500 text-slate-950' },
+            'פיליפ': { border: 'border-yellow-500', text: 'text-yellow-600', badge: 'bg-yellow-400 text-slate-950' },
+            'איבן': { border: 'border-cyan-500', text: 'text-cyan-600', badge: 'bg-cyan-400 text-slate-950' },
+            'רוני': { border: 'border-blue-500', text: 'text-blue-600', badge: 'bg-blue-500 text-white' },
+            'קריין': { border: 'border-purple-500', text: 'text-purple-600', badge: 'bg-purple-600 text-white' },
+            'אלמוני בטלפון': { border: 'border-rose-500', text: 'text-rose-600', badge: 'bg-rose-600 text-white' },
+            'Squad Noobs': { border: 'border-emerald-500', text: 'text-emerald-600', badge: 'bg-emerald-500 text-slate-950' }
+        };
+
+        let currentHero = null;
+        let pageIndex = 0;
+        let totalPages = 15;
+
+        function openComic(chapterKey, startPage = 0) {
+            const hero = heroesMap[chapterKey];
+            if (!hero) return;
+
+            currentHero = hero;
+            pageIndex = startPage;
+            currentZoom = 1.0;
+            totalPages = (comicStories[chapterKey] || []).length || 15;
+
+            document.getElementById('modalHeroTitle').innerText = `${hero.name} — ${hero.title}`;
+            document.getElementById('modalCategoryBadge').innerText = hero.category;
+
+            buildThumbnails();
+            updateWebtoonBtn();
+            updateRatingUI();
+            applyOverlayState();
+            applyNightState();
+            applyMusicState();
+            applyStaticLabels();
+            if (musicEnabled) startMusic(chapterKey);
+            renderPage();
+
+            document.getElementById('comicModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeComic() {
+            if (document.fullscreenElement && document.exitFullscreen) document.exitFullscreen().catch(() => {});
+            stopMusic();
+            clearComicHash();
+            document.getElementById('comicModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        function buildThumbnails() {
+            const strip = document.getElementById('thumbnailsStrip');
+            if (!strip) return;
+            strip.innerHTML = '';
+
+            for (let i = 0; i < totalPages; i++) {
+                const btn = document.createElement('button');
+                btn.className = `min-w-[40px] h-9 rounded-xl font-comic text-xs border transition flex items-center justify-center ${i === pageIndex ? 'bg-indigo-600 text-white font-bold border-indigo-400 scale-105' : 'bg-slate-800 text-slate-400 border-slate-700 hover:bg-slate-700'}`;
+                btn.innerText = i + 1;
+                btn.setAttribute('aria-label', L('עמוד ', 'Page ') + (i + 1));
+                btn.onclick = () => { playSFX('click'); pageIndex = i; renderPage(); };
+                strip.appendChild(btn);
+            }
+        }
+
+        function updateThumbnailsActive() {
+            const strip = document.getElementById('thumbnailsStrip');
+            if (!strip) return;
+            strip.querySelectorAll('button').forEach((btn, idx) => {
+                if (idx === pageIndex) {
+                    btn.className = 'min-w-[40px] h-9 rounded-xl font-comic text-xs border transition flex items-center justify-center bg-indigo-600 text-white font-bold border-indigo-400 scale-105 shadow-md';
+                } else {
+                    btn.className = 'min-w-[40px] h-9 rounded-xl font-comic text-xs border transition flex items-center justify-center bg-slate-800 text-slate-400 border-slate-700 hover:bg-slate-700';
+                }
+            });
+        }
+
+        function handlePageImgError(imgEl, fallbackSrc, heroImg, heroFallback, text) {
+            imgEl.src = fallbackSrc || `https://placehold.co/800x600/0f172a/f59e0b?text=${text}`;
+        }
+
+        function buildDialogueHtml(pageData) {
+            const dialogueList = pageData.dialogue || [{ speaker: pageData.speaker || currentHero.name, speech: pageData.speech }];
+            const positions = ['top-3 right-3', 'top-3 left-3', 'top-20 right-3'];
+            let html = '';
+
+            dialogueList.forEach((item, index) => {
+                const style = speakerStyles[item.speaker] || { border: 'border-indigo-500', text: 'text-indigo-600', badge: 'bg-indigo-600 text-white' };
+                const posClass = positions[index % positions.length];
+
+                html += `
+                    <div class="comic-overlay absolute ${posClass} z-30 pointer-events-auto">
+                        <div class="comic-speech-bubble text-right transition-transform hover:scale-105 cursor-pointer">
+                            <span class="text-[9px] ${style.badge} font-mono font-black px-1.5 py-0.2 rounded inline-block mb-0.5 shadow-sm">${item.speaker}</span>
+                            <p class="font-rubik font-bold text-xs text-slate-900 leading-tight">"${item.speech}"</p>
+                        </div>
+                    </div>
+                `;
+            });
+            return html;
+        }
+
+        function buildSfxHtml(pageData) {
+            if (!pageData.sfx) return '';
+            return `
+                <div class="comic-overlay absolute bottom-10 left-4 z-20 pointer-events-none">
+                    <span class="comic-action text-2xl sm:text-3xl text-rose-500 bg-slate-950/85 px-2.5 py-0.5 rounded-xl border border-rose-500/60 shadow-2xl backdrop-blur-sm animate-bounce inline-block">${pageData.sfx}</span>
+                </div>
+            `;
+        }
+
+        function renderPage() {
+            if (!currentHero) return;
+            const story = comicStories[currentHero.id];
+            if (!story) return;
+
+            localStorage.setItem('squad_last_chapter', currentHero.id);
+            localStorage.setItem('squad_last_page', pageIndex);
+
+            const container = document.getElementById('comicPageContainer');
+            const footer = document.getElementById('modalFooterControls');
+            const thumbWrapper = document.getElementById('thumbnailsStripWrapper');
+
+            if (isWebtoonMode) {
+                footer.classList.add('hidden');
+                thumbWrapper.classList.add('hidden');
+
+                let webtoonHtml = '<div id="webtoonScroll" class="webtoon-scroll-container w-full items-center">';
+                story.forEach((p, idx) => {
+                    webtoonHtml += `
+                        <div id="webtoon-page-${idx}" data-idx="${idx}" class="webtoon-page flex flex-col items-center gap-2 border-b border-slate-800 pb-6 w-full">
+                            <span class="text-xs font-mono text-amber-400 font-bold">${p.title || (L('עמוד ', 'Page ') + (idx + 1))}</span>
+                            <div class="relative max-w-2xl w-full rounded-2xl overflow-hidden border-2 border-slate-800 bg-slate-950">
+                                <img src="${p.img}" alt="${escAttr(p.title)}" loading="lazy" decoding="async" onerror="handlePageImgError(this, '${p.fallbackImg}', '', '', 'עמוד ${idx + 1}')" class="w-full h-auto object-contain">
+                                ${buildDialogueHtml(p)}
+                                ${buildSfxHtml(p)}
+                            </div>
+                        </div>
+                    `;
+                });
+                const nextKey = getNextChapterKey();
+                webtoonHtml += `
+                    <div class="w-full flex justify-center py-6">
+                        <button onclick="goNextChapter()" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl font-bold text-sm transition active:scale-95 shadow-md shadow-indigo-600/30">
+                            ${nextKey ? L('➡ לפרק הבא', 'Next chapter ➡') : L('🏁 סיום', '🏁 Finish')}
+                        </button>
+                    </div>
+                `;
+                webtoonHtml += '</div>';
+                container.innerHTML = webtoonHtml;
+                setupOverlayReveal(container, true);
+
+                const scroller = document.getElementById('webtoonScroll');
+                const bar = document.getElementById('readingProgressBar');
+                const startEl = document.getElementById(`webtoon-page-${pageIndex}`);
+                if (startEl) scroller.scrollTop = startEl.offsetTop - scroller.offsetTop;
+                const syncProgress = () => {
+                    const max = scroller.scrollHeight - scroller.clientHeight;
+                    const pct = max > 0 ? (scroller.scrollTop / max) * 100 : 100;
+                    bar.style.width = `${Math.max(pct, 100 / story.length)}%`;
+                    let current = 0;
+                    scroller.querySelectorAll('.webtoon-page').forEach(el => {
+                        if (el.offsetTop - scroller.offsetTop <= scroller.scrollTop + scroller.clientHeight / 3) {
+                            current = parseInt(el.dataset.idx, 10);
+                        }
+                    });
+                    pageIndex = current;
+                    localStorage.setItem('squad_last_page', pageIndex);
+                    syncHash();
+                };
+                scroller.addEventListener('scroll', syncProgress, { passive: true });
+                syncProgress();
+            } else {
+                footer.classList.remove('hidden');
+                thumbWrapper.classList.remove('hidden');
+
+                const pageData = story[pageIndex];
+                if (!pageData) return;
+
+                const progressPercent = ((pageIndex + 1) / totalPages) * 100;
+                document.getElementById('readingProgressBar').style.width = `${progressPercent}%`;
+                document.getElementById('pageIndicatorText').innerText = `${L('עמוד', 'Page')} ${pageIndex + 1} ${L('מתוך', 'of')} ${totalPages}`;
+
+                updateThumbnailsActive();
+                updateNextButton();
+
+                const dialogueHtml = buildDialogueHtml(pageData);
+
+                container.innerHTML = `
+                    <div class="flex items-center justify-between border-b border-slate-800 pb-2 w-full">
+                        <span class="font-comic text-2xl text-amber-400 tracking-wide">${pageData.title}</span>
+                        <span class="text-xs font-mono text-slate-400">${L('עמוד', 'Page')} ${pageIndex + 1} ${L('מתוך', 'of')} ${totalPages}</span>
+                    </div>
+                    <div id="panelImageContainer" class="w-full h-[58vh] md:h-[62vh] rounded-2xl bg-slate-950 border-2 border-slate-800 overflow-hidden relative flex flex-col items-center justify-center p-2 shadow-inner group">
+                        <div class="zoomable-panel w-full h-full flex items-center justify-center">
+                            <img src="${pageData.img}" alt="${escAttr(pageData.title)}" loading="lazy" decoding="async" onerror="handlePageImgError(this, '${pageData.fallbackImg}', '', '', 'עמוד ${pageIndex + 1}')" class="w-full h-full object-contain rounded-xl shadow-lg transition-transform duration-300">
+                        </div>
+                        ${dialogueHtml}
+                        ${buildSfxHtml(pageData)}
+                        <div class="absolute bottom-2 left-3 bg-slate-900/90 border border-slate-700 text-amber-400 font-mono text-[10px] px-2.5 py-0.5 rounded-lg z-10 pointer-events-none shadow-md">
+                            ${L('פאנל עמוד', 'Panel, page')} ${pageIndex + 1}
+                        </div>
+                    </div>
+                `;
+                setupOverlayReveal(container, false);
+                syncHash();
+            }
+        }
+
+        const chapterNumber = (key) => parseInt(String(key).replace(/\D/g, ''), 10);
+        let lastHash = '';
+
+        function parseComicHash(hash = location.hash) {
+            const m = /^#chapter(\d+)-page(\d+)$/i.exec(hash);
+            if (!m) return null;
+            const key = 'CHAPTER' + parseInt(m[1], 10);
+            if (!comicStories[key]) return null;
+            const page = Math.min(Math.max(parseInt(m[2], 10), 1), comicStories[key].length) - 1;
+            return { key, page };
+        }
+
+        function syncHash() {
+            if (!currentHero) return;
+            const h = `#chapter${chapterNumber(currentHero.id)}-page${pageIndex + 1}`;
+            if (h === lastHash) return;
+            lastHash = h;
+            try { history.replaceState(null, '', h); } catch (e) {}
+        }
+
+        function clearComicHash() {
+            lastHash = '';
+            try { if (location.hash) history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
+        }
+
+        function getShareUrl() {
+            const n = chapterNumber(currentHero.id), page = pageIndex + 1;
+            return SHARE_VIA_PAGES ? new URL(`share/chapter${n}.html#page${page}`, location.href).href : new URL(`#chapter${n}-page${page}`, location.href).href;
+        }
+
+        function showToast(message) {
+            let el = document.getElementById('toast');
+            if (!el) {
+                el = document.createElement('div');
+                el.id = 'toast';
+                el.setAttribute('role', 'status');
+                el.className = 'fixed bottom-24 left-1/2 -translate-x-1/2 z-[100] bg-slate-100 text-slate-900 font-bold text-sm px-4 py-2 rounded-xl shadow-2xl transition-opacity duration-300 opacity-0 pointer-events-none';
+                document.body.appendChild(el);
+            }
+            el.innerText = message;
+            el.style.opacity = '1';
+            clearTimeout(showToast.timer);
+            showToast.timer = setTimeout(() => { el.style.opacity = '0'; }, 2200);
+        }
+
+        async function copyText(text) {
+            try {
+                await navigator.clipboard.writeText(text);
+                return true;
+            } catch (e) {
+                const ta = document.createElement('textarea');
+                ta.value = text;
+                ta.style.position = 'fixed';
+                ta.style.opacity = '0';
+                document.body.appendChild(ta);
+                ta.select();
+                let ok = false;
+                try { ok = document.execCommand('copy'); } catch (err) {}
+                ta.remove();
+                return ok;
+            }
+        }
+
+        async function shareCurrentPage() {
+            if (!currentHero) return;
+            playSFX('click');
+            const url = getShareUrl();
+            const title = `${currentHero.name} — ${currentHero.title}`;
+            const text = `${L('עמוד', 'Page')} ${pageIndex + 1} ${L('מתוך', 'of')} ${totalPages}`;
+            if (navigator.share) {
+                try { await navigator.share({ title, text, url }); return; } catch (e) { if (e && e.name === 'AbortError') return; }
+            }
+            const ok = await copyText(url);
+            showToast(ok ? L('הקישור הועתק! 🔗', 'Link copied! 🔗') : url);
+        }
+
+        window.addEventListener('hashchange', () => {
+            const target = parseComicHash();
+            const modal = document.getElementById('comicModal');
+            const open = modal && !modal.classList.contains('hidden');
+            if (target && (!open || !currentHero || currentHero.id !== target.key || pageIndex !== target.page)) {
+                openComic(target.key, target.page);
+            }
+        });
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const target = parseComicHash();
+            if (target) openComic(target.key, target.page);
+        });
+
+        let nightMode = false;
+        try { nightMode = localStorage.getItem('squad_night_mode') === '1'; } catch (e) {}
+
+        function applyNightState() {
+            const modal = document.getElementById('comicModal');
+            const btn = document.getElementById('nightToggleBtn');
+            if (modal) modal.classList.toggle('night-mode', nightMode);
+            if (btn) {
+                btn.style.opacity = nightMode ? '1' : '0.6';
+                btn.setAttribute('aria-pressed', nightMode ? 'true' : 'false');
+            }
+        }
+
+        function toggleNightMode() {
+            playSFX('click');
+            nightMode = !nightMode;
+            try { localStorage.setItem('squad_night_mode', nightMode ? '1' : '0'); } catch (e) {}
+            applyNightState();
+        }
+
+        let overlayObserver = null;
+
+        function setupOverlayReveal(container, webtoon) {
+            if (overlayObserver) { overlayObserver.disconnect(); overlayObserver = null; }
+            container.classList.remove('reveal-fx');
+            const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (reduced) return;
+
+            const overlays = container.querySelectorAll('.comic-overlay');
+            if (!overlays.length) return;
+
+            if (!webtoon) {
+                container.classList.add('reveal-fx');
+                overlays.forEach((el, i) => setTimeout(() => el.classList.add('in'), 300 + i * 450));
+                return;
+            }
+            if (!('IntersectionObserver' in window)) return;
+            container.classList.add('reveal-fx');
+            overlayObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return;
+                    const el = entry.target;
+                    overlayObserver && overlayObserver.unobserve(el);
+                    setTimeout(() => el.classList.add('in'), 150);
+                });
+            }, { root: document.getElementById('webtoonScroll'), rootMargin: '0px 0px -10% 0px', threshold: 0.01 });
+            overlays.forEach(el => overlayObserver.observe(el));
+        }
+
+        const MUSIC_MOODS = {
+            CHAPTER1: { root: 57, scale: [0, 2, 4, 7, 9], bpm: 72, minor: false, prog: [0, 5, 7, 5], wave: 'sine', arp: 0.70, pulse: false },
+            CHAPTER2: { root: 50, scale: [0, 2, 3, 5, 7, 10], bpm: 58, minor: true, prog: [0, 3, 5, 3], wave: 'triangle', arp: 0.50, pulse: false },
+            CHAPTER3: { root: 52, scale: [0, 3, 5, 7, 10], bpm: 112, minor: true, prog: [0, 8, 10, 7], wave: 'triangle', arp: 0.85, pulse: true },
+            CHAPTER4: { root: 48, scale: [0, 1, 3, 5, 7, 8, 10], bpm: 90, minor: true, prog: [0, 0, 8, 7], wave: 'sawtooth', arp: 0.45, pulse: true }
+        };
+
+        let musicEnabled = false;
+        try { musicEnabled = localStorage.getItem('squad_music') === '1'; } catch (e) {}
+        let musicPlaying = false, musicChapter = null, musicTimer = null, musicEl = null;
+        let musicBus = null, musicNodes = [], musicStep = 0, musicNext = 0, musicMood = null;
+        const midiToHz = (n) => 440 * Math.pow(2, (n - 69) / 12);
+
+        function applyMusicState() {
+            const btn = document.getElementById('musicToggleBtn');
+            if (!btn) return;
+            btn.style.opacity = musicEnabled ? '1' : '0.45';
+            btn.setAttribute('aria-pressed', musicEnabled ? 'true' : 'false');
+        }
+
+        function isComicOpen() {
+            const modal = document.getElementById('comicModal');
+            return !!modal && !modal.classList.contains('hidden');
+        }
+
+        function toggleMusic() {
+            playSFX('click');
+            musicEnabled = !musicEnabled;
+            try { localStorage.setItem('squad_music', musicEnabled ? '1' : '0'); } catch (e) {}
+            applyMusicState();
+            if (musicEnabled) { if (isComicOpen() && currentHero) startMusic(currentHero.id); }
+            else stopMusic();
+        }
+
+        function musicTone(freq, t, dur, o) {
+            const osc = audioCtx.createOscillator();
+            const g = audioCtx.createGain();
+            osc.type = o.type;
+            osc.frequency.value = freq;
+            if (o.detune) osc.detune.value = o.detune;
+            g.gain.setValueAtTime(0.0001, t);
+            g.gain.linearRampToValueAtTime(o.peak, t + o.attack);
+            g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+            let last = osc;
+            if (o.cutoff) {
+                const f = audioCtx.createBiquadFilter();
+                f.type = 'lowpass';
+                f.frequency.value = o.cutoff;
+                osc.connect(f);
+                last = f;
+            }
+            last.connect(g);
+            g.connect(musicBus);
+            osc.start(t);
+            osc.stop(t + dur + 0.05);
+        }
+
+        function musicNote(step, t, eighth) {
+            const m = musicMood;
+            const bar = Math.floor(step / 8), pos = step % 8;
+            const chordRoot = m.root + m.prog[bar % m.prog.length];
+
+            if (pos === 0) {
+                const dur = eighth * 8;
+                [0, m.minor ? 3 : 4, 7].forEach((iv, i) => musicTone(midiToHz(chordRoot + iv), t, dur,
+                    { type: m.wave, peak: 0.035, attack: dur * 0.3, detune: (i - 1) * 6, cutoff: m.wave === 'sawtooth' ? 600 : 0 }));
+                musicTone(midiToHz(chordRoot - 12), t, dur, { type: 'sine', peak: 0.07, attack: 0.4, cutoff: 0 });
+            }
+            if (Math.random() < m.arp) {
+                const deg = m.scale[Math.floor(Math.random() * m.scale.length)];
+                musicTone(midiToHz(m.root + 12 + deg), t, eighth * 3.5, { type: 'sine', peak: 0.06, attack: 0.01, cutoff: 0 });
+            }
+            if (m.pulse && pos % 2 === 0) {
+                musicTone(midiToHz(m.root - 24), t, eighth * 1.6, { type: 'sine', peak: pos === 0 ? 0.16 : 0.09, attack: 0.005, cutoff: 0 });
+            }
+        }
+
+        function scheduleMusic() {
+            if (!musicPlaying || !musicBus) return;
+            const eighth = 60 / musicMood.bpm / 2;
+            while (musicNext < audioCtx.currentTime + 0.4) {
+                musicNote(musicStep, musicNext, eighth);
+                musicNext += eighth;
+                musicStep++;
+            }
+        }
+
+        function startMusic(key) {
+            if (!musicEnabled) return;
+            if (musicPlaying && musicChapter === key) return;
+            stopMusic();
+            musicChapter = key;
+            musicPlaying = true;
+
+            if (MUSIC_FILES[key]) {
+                try {
+                    musicEl = new Audio(MUSIC_FILES[key]);
+                    musicEl.loop = true;
+                    musicEl.volume = 0.35;
+                    musicEl.play().catch(() => {});
+                } catch (e) {}
+                return;
+            }
+            try {
+                if (audioCtx.state === 'suspended') audioCtx.resume();
+                musicMood = MUSIC_MOODS[key] || MUSIC_MOODS.CHAPTER1;
+                const now = audioCtx.currentTime;
+                const beat = 60 / musicMood.bpm;
+
+                const bus = audioCtx.createGain();
+                bus.gain.setValueAtTime(0.0001, now);
+                bus.gain.exponentialRampToValueAtTime(0.5, now + 2);
+                const delay = audioCtx.createDelay(2);
+                delay.delayTime.value = beat * 0.75;
+                const feedback = audioCtx.createGain();
+                feedback.gain.value = 0.35;
+                const damp = audioCtx.createBiquadFilter();
+                damp.type = 'lowpass';
+                damp.frequency.value = 1800;
+                bus.connect(audioCtx.destination);
+                bus.connect(delay);
+                delay.connect(damp);
+                damp.connect(feedback);
+                feedback.connect(delay);
+                damp.connect(audioCtx.destination);
+
+                musicBus = bus;
+                musicNodes = [bus, delay, feedback, damp];
+                musicStep = 0;
+                musicNext = now + 0.15;
+                musicTimer = setInterval(scheduleMusic, 100);
+                scheduleMusic();
+            } catch (e) { musicPlaying = false; }
+        }
+
+        function stopMusic() {
+            musicPlaying = false;
+            musicChapter = null;
+            if (musicTimer) { clearInterval(musicTimer); musicTimer = null; }
+            if (musicEl) { try { musicEl.pause(); } catch (e) {} musicEl = null; }
+            if (musicNodes.length) {
+                const nodes = musicNodes;
+                musicNodes = [];
+                musicBus = null;
+                try {
+                    const now = audioCtx.currentTime;
+                    nodes[0].gain.cancelScheduledValues(now);
+                    nodes[0].gain.setValueAtTime(Math.max(nodes[0].gain.value, 0.0001), now);
+                    nodes[0].gain.exponentialRampToValueAtTime(0.0001, now + 0.6);
+                } catch (e) {}
+                setTimeout(() => nodes.forEach(n => { try { n.disconnect(); } catch (e) {} }), 800);
+            }
+        }
+
+        const svg = (d) => `<svg class="ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
+        const SPEAKER = '<path d="M11 5 6 9H2v6h4l5 4V5z"/>';
+        const ICONS = {
+            audioOn: SPEAKER + '<path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/>',
+            audioOff: SPEAKER + '<path d="m22 9-6 6m0-6 6 6"/>',
+            zoomInBtn: '<circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/>',
+            zoomOutBtn: '<circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M8 11h6"/>',
+            musicToggleBtn: '<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>',
+            nightToggleBtn: '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>',
+            shareBtn: '<path d="M12 3v12M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/>',
+            overlayToggleBtn: '<path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>',
+            fullscreenBtn: '<path d="M8 3H5a2 2 0 0 0-2 2v3M21 8V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3M16 21h3a2 2 0 0 0 2-2v-3"/>',
+            closeComicBtn: '<path d="M18 6 6 18M6 6l12 12"/>'
+        };
+
+        function setAudioIcon() {
+            const b = document.getElementById('audioToggleBtn');
+            if (b) b.innerHTML = svg(audioEnabled ? ICONS.audioOn : ICONS.audioOff);
+        }
+
+        function stripEmoji(root) {
+            const has = /(?![©®™])[\p{Extended_Pictographic}]/u;
+            const all = /(?![©®™])[\p{Extended_Pictographic}\uFE0F\u200D]/gu;
+            const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+            const hits = [];
+            while (walker.nextNode()) {
+                const n = walker.currentNode, el = n.parentElement;
+                if (el && !el.closest('script,style,#comicPageContainer') && has.test(n.nodeValue)) hits.push(n);
+            }
+            hits.forEach(n => { n.nodeValue = n.nodeValue.replace(all, '').replace(/^\s{2,}/, ' '); });
+        }
+
+        (function () {
+            let timer;
+            const wake = () => {
+                const m = document.getElementById('comicModal');
+                if (!m) return;
+                m.classList.remove('chrome-hidden');
+                clearTimeout(timer);
+                timer = setTimeout(() => { if (!m.classList.contains('hidden')) m.classList.add('chrome-hidden'); }, 3500);
+            };
+            ['pointermove', 'pointerdown', 'keydown', 'touchstart', 'wheel'].forEach(e => document.addEventListener(e, wake, { passive: true }));
+            document.addEventListener('scroll', wake, { capture: true, passive: true });
+        })();
+
+        window.addEventListener('DOMContentLoaded', () => { applyIcons(); stripEmoji(document.body); applyStock(); });
+
+        const chapterOrder = Object.keys(heroesMap);
+
+        function getNextChapterKey() {
+            if (!currentHero) return null;
+            return chapterOrder[chapterOrder.indexOf(currentHero.id) + 1] || null;
+        }
+
+        function goNextChapter() {
+            playSFX('click');
+            const key = getNextChapterKey();
+            if (key) openComic(key, 0); else closeComic();
+        }
+
+        function nextOrNextChapter() {
+            if (pageIndex < totalPages - 1) nextPage(); else goNextChapter();
+        }
+
+        function updateNextButton() {
+            const label = document.getElementById('nextBtnLabel');
+            if (!label || !currentHero) return;
+            if (pageIndex < totalPages - 1) label.innerText = L('עמוד הבא', 'Next page');
+            else label.innerText = getNextChapterKey() ? L('לפרק הבא', 'Next chapter') : L('סיום', 'Finish');
+        }
+
+        let overlaysHidden = false;
+        try { overlaysHidden = localStorage.getItem('squad_overlays_hidden') === '1'; } catch (e) {}
+
+        function applyOverlayState() {
+            const modal = document.getElementById('comicModal');
+            const btn = document.getElementById('overlayToggleBtn');
+            if (modal) modal.classList.toggle('overlays-hidden', overlaysHidden);
+            if (btn) {
+                btn.style.opacity = overlaysHidden ? '0.45' : '1';
+                btn.setAttribute('aria-pressed', overlaysHidden ? 'true' : 'false');
+            }
+        }
+
+        function toggleOverlays() {
+            playSFX('click');
+            overlaysHidden = !overlaysHidden;
+            try { localStorage.setItem('squad_overlays_hidden', overlaysHidden ? '1' : '0'); } catch (e) {}
+            applyOverlayState();
+        }
+
+        function toggleFullscreen() {
+            playSFX('click');
+            const modal = document.getElementById('comicModal');
+            if (document.fullscreenElement) {
+                document.exitFullscreen().catch(() => {});
+            } else if (modal && modal.requestFullscreen) {
+                modal.requestFullscreen().catch(() => {});
+            }
+        }
+
+        function applyStaticLabels() {
+            const labels = {
+                audioToggleBtn: ['אפקטים קוליים', 'Sound effects'],
+                zoomInBtn: ['הגדל זום', 'Zoom in'],
+                zoomOutBtn: ['הקטן זום', 'Zoom out'],
+                closeComicBtn: ['סגור', 'Close'],
+                fullscreenBtn: ['מסך מלא', 'Fullscreen'],
+                overlayToggleBtn: ['הצג/הסתר בועות דיבור ואפקטים', 'Show/hide speech bubbles & effects'],
+                musicToggleBtn: ['מוזיקת רקע', 'Background music'],
+                nightToggleBtn: ['מצב קריאה לילי', 'Night reading mode'],
+                shareBtn: ['שתף את העמוד הזה', 'Share this page']
+            };
+            Object.entries(labels).forEach(([id, [he, en]]) => {
+                const el = document.getElementById(id);
+                if (!el) return;
+                const text = L(he, en);
+                el.title = text;
+                el.setAttribute('aria-label', text);
+            });
+            const fb = document.getElementById('feedbackLink');
+            if (fb) {
+                if (FEEDBACK_URL) {
+                    fb.href = FEEDBACK_URL;
+                    fb.innerText = L('💬 מה חשבת על הפרק?', '💬 What did you think?');
+                    fb.classList.remove('hidden');
+                } else {
+                    fb.classList.add('hidden');
+                }
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            applyStaticLabels();
+            applyOverlayState();
+            updateWebtoonBtn();
+            const fsBtn = document.getElementById('fullscreenBtn');
+            if (fsBtn && !document.fullscreenEnabled) fsBtn.classList.add('hidden');
+        });
+
+        function nextPage() {
+            playSFX('click');
+            if (pageIndex < totalPages - 1) { pageIndex++; renderPage(); }
+        }
+
+        function prevPage() {
+            playSFX('click');
+            if (pageIndex > 0) { pageIndex--; renderPage(); }
+        }
+
+        (function setupSwipe() {
+            const area = document.getElementById('comicPageContainer');
+            if (!area) return;
+            let startX = 0, startY = 0, tracking = false;
+
+            area.addEventListener('touchstart', (e) => {
+                if (isWebtoonMode || e.touches.length !== 1) { tracking = false; return; }
+                startX = e.touches[0].clientX;
+                startY = e.touches[0].clientY;
+                tracking = true;
+            }, { passive: true });
+
+            area.addEventListener('touchend', (e) => {
+                if (!tracking || isWebtoonMode) return;
+                tracking = false;
+                const dx = e.changedTouches[0].clientX - startX;
+                const dy = e.changedTouches[0].clientY - startY;
+                if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+                if (dx < 0) nextPage(); else prevPage();
+            }, { passive: true });
+        })();
+
+        window.addEventListener('keydown', (e) => {
+            const modal = document.getElementById('comicModal');
+            if (!modal || modal.classList.contains('hidden')) return;
+            if (e.key === 'ArrowRight' || e.key === 'Right') prevPage();
+            else if (e.key === 'ArrowLeft' || e.key === 'Left') nextPage();
+            else if (e.key === 'Escape') closeComic();
+        });
+    </script>
+    <script>
+        if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+            window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+        }
+    </script>
+    <script>
+        (function () {
+            const wrap = document.getElementById('ticker');
+            if (!wrap) return;
+            const vp = wrap.querySelector('.ticker-viewport'), track = document.getElementById('tickerTrack');
+            const base = document.getElementById('tickerBase');
+            const SPEED = 55;
+
+            function build() {
+                track.querySelectorAll('[data-clone]').forEach(n => n.remove());
+                wrap.classList.add('is-running');
+                const w = base.getBoundingClientRect().width;
+                if (!w) return;
+                const copies = Math.ceil(vp.clientWidth / w);
+                for (let i = 0; i < copies; i++) {
+                    const c = base.cloneNode(true);
+                    c.removeAttribute('id'); c.setAttribute('aria-hidden', 'true'); c.setAttribute('data-clone', '');
+                    track.appendChild(c);
+                }
+                const rtl = getComputedStyle(track).direction === 'rtl';
+                track.style.setProperty('--ticker-shift', (rtl ? w : -w) + 'px');
+                track.style.setProperty('--ticker-dur', (w / SPEED) + 's');
+            }
+            if ('ResizeObserver' in window) {
+                let raf; const ro = new ResizeObserver(() => { cancelAnimationFrame(raf); raf = requestAnimationFrame(build); });
+                ro.observe(base); ro.observe(vp);
+            } else { window.addEventListener('resize', build); }
+            build();
+        })();
+    </script>
+    <script src="accessibility.js" defer></script>
+</body>
+</html>

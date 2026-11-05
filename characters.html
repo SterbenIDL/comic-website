@@ -1,0 +1,993 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>דמויות ויקום Squad Noobs | הגיבורים, היריבים והבסיס</title>
+    <link id="siteIcon" rel="icon" href="לוגו1.jpg">
+    <link id="siteTouchIcon" rel="apple-touch-icon" href="לוגו1.jpg">
+    <meta name="description" content="הכירו את ארבעת גיבורי Squad Noobs: עידן, פיליפ, איבן ורוני, הכוחות שלהם, היריבים, הבסיס הסודי וציר הזמן של כרך 1." />
+    <link rel="canonical" href="https://YOUR-DOMAIN.example/characters.html" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0B0B0A" />
+    <meta property="og:title" content="דמויות ויקום Squad Noobs" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://YOUR-DOMAIN.example/Chapter_1.jpg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "דמויות ויקום Squad Noobs",
+        "url": "https://YOUR-DOMAIN.example/characters.html",
+        "inLanguage": "he",
+        "isPartOf": {
+          "@type": "ComicSeries",
+          "name": "Squad Noobs",
+          "url": "https://YOUR-DOMAIN.example/comics.html"
+        }
+      }
+    </script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Heebo:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --gold: #c9a96a;
+        --ivory: #f4efe6;
+        --ink: #0b0b0a;
+        --mut: #9a948a;
+        --line: rgba(201, 169, 106, 0.22);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        background: var(--ink);
+      }
+
+      /* Base page and background */
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: var(--ink);
+        color: var(--ivory);
+        font:
+          1rem/1.85 Heebo,
+          Arial,
+          sans-serif;
+        padding: env(safe-area-inset-top, 0) 0 env(safe-area-inset-bottom, 0);
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: url("לוגו1.jpg") center/cover no-repeat;
+        opacity: 0.18;
+        filter: blur(8px) brightness(0.7);
+        z-index: -2;
+      }
+      body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: radial-gradient(circle at 50% 30%, rgba(11, 11, 10, 0.55), rgba(11, 11, 10, 0.96));
+        z-index: -1;
+        pointer-events: none;
+      }
+
+      /* Top navigation */
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+        padding: 12px 24px;
+        background: rgba(11, 11, 10, 0.8);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--line);
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+      }
+      .brand img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+      }
+      .brand span {
+        font-family: "Frank Ruhl Libre", serif;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        font-size: 1.25rem;
+        color: var(--gold);
+      }
+      .nl {
+        display: flex;
+        gap: 18px;
+        font-size: 0.85rem;
+      }
+      a {
+        color: var(--gold);
+      }
+
+      /* Layout and typography */
+      main {
+        flex: 1;
+        width: 100%;
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      main.w {
+        max-width: 980px;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Frank Ruhl Libre", serif;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
+      h1 {
+        color: var(--ivory);
+        font-weight: 500;
+        letter-spacing: 0.18em;
+        font-size: 2.2rem;
+        text-align: center;
+        margin: 0 0 0.3em;
+      }
+      h1::after {
+        content: "";
+        display: block;
+        width: 140px;
+        height: 1px;
+        margin: 1rem auto 0;
+        background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      }
+      h2 {
+        color: var(--gold);
+        font-size: 1.5rem;
+        margin-top: 2em;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 0.3em;
+      }
+      .m {
+        color: var(--mut);
+        font-size: 0.85rem;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 16px;
+      }
+
+      /* Cards and boxes */
+      .card,
+      .box {
+        background: rgba(20, 20, 18, 0.85);
+        border: 1px solid var(--line);
+        border-radius: 2px;
+        padding: 18px;
+        box-shadow: 0 14px 34px -16px rgba(0, 0, 0, 0.85);
+        transition: border-color 0.2s;
+      }
+      .card {
+        border-top: 2px solid var(--c, var(--gold));
+      }
+      .card:hover {
+        border-color: var(--gold);
+      }
+      .card h3 {
+        margin: 0;
+        font-size: 1.4rem;
+        color: var(--c, var(--gold));
+      }
+      .pw {
+        font-weight: 700;
+        margin: 0.2em 0;
+      }
+      ol {
+        list-style: none;
+        padding: 0;
+        border-right: 1px solid var(--gold);
+        margin: 0;
+      }
+      li {
+        padding: 0 18px 18px;
+      }
+
+      /* Buttons */
+      .cta {
+        display: inline-block;
+        margin: 6px 0 0 8px;
+        padding: 10px 20px;
+        border-radius: 2px;
+        background: var(--gold);
+        color: var(--ink);
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-decoration: none;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 24px 16px;
+        color: var(--mut);
+        font-size: 0.8rem;
+        border-top: 1px solid var(--line);
+      }
+      footer a {
+        color: var(--mut);
+        margin: 0 8px;
+      }
+
+      /* Premium page: hero, chips, profiles */
+      .hero {
+        text-align: center;
+        padding: 28px 0 8px;
+      }
+      .eyebrow {
+        color: var(--gold);
+        letter-spacing: 0.3em;
+        font-size: 0.8rem;
+        margin: 0;
+      }
+      .hero h1 {
+        font-size: clamp(2.4rem, 8vw, 4.2rem);
+        margin: 0.15em 0;
+      }
+      .lead {
+        max-width: 640px;
+        margin: 1rem auto;
+        color: var(--ivory);
+        font-size: 1.1rem;
+      }
+      .stats {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 28px;
+        list-style: none;
+        padding: 0;
+        margin: 1.2rem 0 0;
+        color: var(--mut);
+      }
+      .stats li {
+        padding: 0;
+      }
+      .stats b {
+        font-family: "Frank Ruhl Libre", serif;
+        font-size: 1.8rem;
+        color: var(--gold);
+        margin-inline-end: 6px;
+      }
+      .chips {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        padding: 10px 0;
+        margin: 18px 0 8px;
+        background: rgba(11, 11, 10, 0.88);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--line);
+      }
+      .chips a {
+        flex: none;
+        padding: 6px 14px;
+        border: 1px solid var(--line);
+        border-radius: 2px;
+        text-decoration: none;
+        font-size: 0.85rem;
+      }
+      .chips a:hover,
+      .chips a.on {
+        background: var(--gold);
+        color: var(--ink);
+      }
+      section {
+        scroll-margin-top: 64px;
+      }
+      .wide {
+        display: block;
+        margin: 16px 0;
+        border: 1px solid var(--line);
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      .heroes {
+        display: grid;
+        gap: 22px;
+      }
+      .hero-card {
+        display: grid;
+        grid-template-columns: 1fr;
+        background: rgba(20, 20, 18, 0.88);
+        border: 1px solid var(--line);
+        border-top: 3px solid var(--c);
+        box-shadow: 0 18px 40px -18px rgba(0, 0, 0, 0.9);
+        transition:
+          border-color 0.25s,
+          box-shadow 0.25s;
+      }
+      .hero-card:hover {
+        border-color: var(--c);
+        box-shadow: 0 18px 46px -14px var(--c);
+      }
+      .shot {
+        position: relative;
+        display: block;
+        overflow: hidden;
+      }
+      .shot img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        transition: transform 0.6s;
+      }
+      .hero-card:hover .shot img {
+        transform: scale(1.04);
+      }
+      .cap {
+        position: absolute;
+        inset: auto 0 0 0;
+        padding: 8px 14px;
+        font-size: 0.75rem;
+        letter-spacing: 0.1em;
+        color: var(--ivory);
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+      }
+      .body {
+        padding: 20px 22px 24px;
+        position: relative;
+      }
+      .idx {
+        position: absolute;
+        inset-inline-end: 18px;
+        top: 6px;
+        font-family: "Frank Ruhl Libre", serif;
+        font-size: 3.4rem;
+        color: var(--c);
+        opacity: 0.25;
+        line-height: 1;
+      }
+      .body h3 {
+        font-size: 2rem;
+        margin: 0;
+        color: var(--c);
+      }
+      .role {
+        margin: 0;
+        color: var(--mut);
+        letter-spacing: 0.08em;
+      }
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        list-style: none;
+        padding: 0;
+        margin: 12px 0;
+      }
+      .tags li {
+        padding: 2px 12px;
+        border: 1px solid var(--c);
+        color: var(--c);
+        font-size: 0.8rem;
+        border-radius: 2px;
+      }
+      .body h4 {
+        margin: 16px 0 6px;
+        color: var(--gold);
+        font-size: 0.95rem;
+        letter-spacing: 0.1em;
+      }
+      .moments {
+        margin: 0;
+        padding-inline-start: 18px;
+      }
+      .moments li {
+        padding: 0 0 6px;
+      }
+      blockquote {
+        margin: 16px 0 0;
+        padding: 4px 16px;
+        border-inline-start: 2px solid var(--c);
+        font-family: "Frank Ruhl Libre", serif;
+        font-size: 1.15rem;
+      }
+      blockquote p {
+        margin: 0;
+      }
+      blockquote a {
+        font-size: 0.75rem;
+        color: var(--mut);
+        font-family: Heebo, sans-serif;
+      }
+      .combo {
+        margin-top: 22px;
+        padding: 22px;
+        text-align: center;
+        border: 1px solid var(--gold);
+        background: linear-gradient(
+          135deg,
+          rgba(245, 158, 11, 0.12),
+          rgba(34, 211, 238, 0.1) 60%,
+          rgba(59, 130, 246, 0.12)
+        );
+      }
+      .combo h3 {
+        margin: 0 0 6px;
+        color: var(--gold);
+      }
+      .gear {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 14px;
+      }
+      .gear li {
+        padding: 16px 18px;
+        background: rgba(20, 20, 18, 0.85);
+        border: 1px solid var(--line);
+      }
+      .gear h3,
+      .grid h3 {
+        margin: 0 0 4px;
+        font-size: 1.2rem;
+        color: var(--gold);
+      }
+      .gear p {
+        margin: 0;
+      }
+      .tl {
+        border: 0;
+        display: grid;
+        gap: 22px;
+      }
+      .tl li {
+        display: grid;
+        gap: 14px;
+        padding: 0;
+        grid-template-columns: 1fr;
+      }
+      .tl h3 {
+        margin: 0;
+        font-size: 1.5rem;
+        color: var(--gold);
+      }
+      .tl p {
+        margin: 4px 0;
+      }
+      .cov {
+        border: 1px solid var(--line);
+        overflow: hidden;
+      }
+      .end {
+        text-align: center;
+        margin-top: 40px;
+        padding: 32px 16px;
+        border-top: 1px solid var(--line);
+      }
+      @media (min-width: 760px) {
+        .hero-card {
+          grid-template-columns: 1.1fr 1fr;
+        }
+        .hero-card:nth-child(even) .shot {
+          order: 2;
+        }
+        .shot img {
+          height: 100%;
+          aspect-ratio: auto;
+          min-height: 340px;
+        }
+        .tl li {
+          grid-template-columns: 300px 1fr;
+          align-items: center;
+        }
+      }
+      /* Scroll reveal (only when JS is running, and never with reduced motion or the accessibility toggle) */
+      html.js .rv {
+        opacity: 0;
+        transform: translateY(22px);
+        transition:
+          opacity 0.7s,
+          transform 0.7s;
+      }
+      html.js .rv.in {
+        opacity: 1;
+        transform: none;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html.js .rv {
+          opacity: 1;
+          transform: none;
+          transition: none;
+        }
+        .shot img {
+          transition: none;
+        }
+      }
+      html.a11y-anim .rv {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top navigation -->
+    <nav aria-label="ניווט באתר">
+      <a class="brand" href="comics.html"
+        ><img
+          src="לוגו.jpg"
+          onerror="
+            this.src = 'לוגו1.jpg';
+            this.onerror = function () {
+              this.style.display = 'none';
+            };
+          "
+          alt="Squad Noobs"
+        /><span>SQUAD NOOBS</span></a
+      >
+      <div class="nl">
+        <a href="faq.html">שאלות נפוצות</a><a href="privacy.html">מדיניות פרטיות</a
+        ><a href="terms.html">תנאי שימוש</a><a href="accessibility.html">הצהרת נגישות</a>
+      </div>
+    </nav>
+    <!-- Main content -->
+    <main id="mainContent" class="w">
+      <header class="hero">
+        <p class="eyebrow">ארכיון היקום · כרך 1</p>
+        <h1>דמויות ויקום</h1>
+        <p class="lead">
+          ארבעה חברים נולדו עם כוחות, ומישהו כבר מחפש אותם. כאן אוספים את כל מה שהקומיקס חשף עד עכשיו:
+          הגיבורים, היריבים, הבסיס והציוד.
+        </p>
+        <ul class="stats" aria-label="במספרים">
+          <li><b>4</b> גיבורים</li>
+          <li><b>4</b> פרקים</li>
+          <li><b>60</b> עמודים</li>
+          <li><b>3</b> יריבים</li>
+        </ul>
+      </header>
+      <div class="chips" role="navigation" aria-label="קפיצה לפי נושא">
+        <a href="#origin">המקור</a><a href="#heroes">הגיבורים</a><a href="#rivals">היריבים</a
+        ><a href="#base">הבסיס והציוד</a><a href="#timeline">ציר זמן</a>
+      </div>
+
+      <section id="origin" class="rv" aria-labelledby="t-origin">
+        <h2 id="t-origin">המקור</h2>
+        <a class="wide" href="comics.html#chapter1-page2"
+          ><img
+            src="CHAPTER1/2.jpg"
+            alt="פרק 1, עמוד 2: ארבעת הגיבורים כתינוקות, עם ניצוץ של אור סביבם"
+            width="1376"
+            height="768"
+            loading="lazy"
+            decoding="async"
+        /></a>
+        <p>
+          הכול התחיל ביום הלידה. כשהם נולדו, משהו בחדר הלידה הרגיש אחרת לגמרי, ועידן מספר שהם היו שונים עוד
+          לפני שידעו ללכת. שנים אחר כך הכוחות מתפרצים בבית קפה, ומכאן הסיפור מתחיל.
+        </p>
+      </section>
+
+      <section id="heroes" aria-labelledby="t-heroes">
+        <h2 id="t-heroes">הגיבורים</h2>
+        <div class="heroes">
+          <article class="hero-card rv" style="--c: #f59e0b" aria-labelledby="h-idan">
+            <a class="shot" href="comics.html#chapter4-page8"
+              ><img
+                src="CHAPTER4/8.jpg"
+                alt="פרק 4, עמוד 8: עידן מכה את הסייבורג באגרוף של אש ואפלה"
+                width="1376"
+                height="768"
+                loading="lazy"
+                decoding="async"
+              /><span class="cap">רגע מפתח · פרק 4, עמוד 8</span></a
+            >
+            <div class="body">
+              <span class="idx" aria-hidden="true">01</span>
+              <h3 id="h-idan">עידן</h3>
+              <p class="role">מנהיג החבורה</p>
+              <ul class="tags" aria-label="כוחות">
+                <li>אש</li>
+                <li>אפלה</li>
+              </ul>
+              <p>
+                מנהיג החבורה. פתיל קצר, עצבני ורודף צדק: כשמישהו מאיים על החברים או על חפים מפשע, הוא הראשון
+                שמתפוצץ ומתקדם. הוא גם זה שמספר את סיפור המקור.
+              </p>
+              <h4>רגעים בכרך 1</h4>
+              <ul class="moments">
+                <li>
+                  <a href="comics.html#chapter1-page11">פרק 1</a> מקבל את שיחת האיום בבית הקפה, וכוחו מתפרץ
+                  לראשונה.
+                </li>
+                <li>
+                  <a href="comics.html#chapter3-page7">פרק 3</a> מפוצץ את התקרה, עולה לגג ומציל סבתא באמצע
+                  הקרב.
+                </li>
+                <li>
+                  <a href="comics.html#chapter4-page8">פרק 4</a> מזנק על הסייבורג ומסיים את הקרב במכת אש
+                  ואפלה.
+                </li>
+              </ul>
+              <blockquote>
+                <p>&quot;אף אחד לא יאיים על החברים שלי!&quot;</p>
+                <a href="comics.html#chapter1-page11">פרק 1, עמוד 11</a>
+              </blockquote>
+            </div>
+          </article>
+          <article class="hero-card rv" style="--c: #facc15" aria-labelledby="h-philip">
+            <a class="shot" href="comics.html#chapter4-page1"
+              ><img
+                src="CHAPTER4/1.jpg"
+                alt="פרק 4, עמוד 1: מטח הלייזר ומגן הגבישים של פיליפ"
+                width="1376"
+                height="768"
+                loading="lazy"
+                decoding="async"
+              /><span class="cap">רגע מפתח · פרק 4, עמוד 1</span></a
+            >
+            <div class="body">
+              <span class="idx" aria-hidden="true">02</span>
+              <h3 id="h-philip">פיליפ</h3>
+              <p class="role">האדיש</p>
+              <ul class="tags" aria-label="כוחות">
+                <li>אור</li>
+                <li>אדמה</li>
+              </ul>
+              <p>
+                האדיש של החבורה: שום דבר לא מוציא אותו משלוותו, גם כשהכול בוער. הוא בנה את לאקי הכלב, ובכוחות
+                אור ואדמה הוא מגן על כולם בקרב.
+              </p>
+              <h4>רגעים בכרך 1</h4>
+              <ul class="moments">
+                <li><a href="comics.html#chapter2-page5">פרק 2</a> מכין את חדר הנשק והציוד לכל תרחיש.</li>
+                <li>
+                  <a href="comics.html#chapter3-page8">פרק 3</a> טעות שמציפה את המעבדה, וכלב שרץ אחרי חתול
+                  באמצע הקרב.
+                </li>
+                <li>
+                  <a href="comics.html#chapter4-page1">פרק 4</a> מכה ברצפה ומקים מגן גבישים ואדמה ענק מול מטח
+                  הלייזר.
+                </li>
+              </ul>
+              <blockquote>
+                <p>&quot;חדר הנשק והציוד מוכן לכל תרחיש.&quot;</p>
+                <a href="comics.html#chapter2-page5">פרק 2, עמוד 5</a>
+              </blockquote>
+            </div>
+          </article>
+          <article class="hero-card rv" style="--c: #22d3ee" aria-labelledby="h-ivan">
+            <a class="shot" href="comics.html#chapter4-page4"
+              ><img
+                src="CHAPTER4/4.jpg"
+                alt="פרק 4, עמוד 4: הקצר החשמלי של איבן"
+                width="1376"
+                height="768"
+                loading="lazy"
+                decoding="async"
+              /><span class="cap">רגע מפתח · פרק 4, עמוד 4</span></a
+            >
+            <div class="body">
+              <span class="idx" aria-hidden="true">03</span>
+              <h3 id="h-ivan">איבן</h3>
+              <p class="role">המאחר והטכנולוג</p>
+              <ul class="tags" aria-label="כוחות">
+                <li>רוח</li>
+                <li>חשמל</li>
+              </ul>
+              <p>
+                המאחר של החבורה, ומי שמבין במחשבים: המחשב, מדפסת התלת-ממד והמעברים הסודיים הם הטריטוריה שלו.
+                בכוחות רוח וחשמל הוא הופך לסופת טורנדו וברקים.
+              </p>
+              <h4>רגעים בכרך 1</h4>
+              <ul class="moments">
+                <li><a href="comics.html#chapter1-page6">פרק 1</a> מגיע באיחור, כי החשמל באוטובוס נתקע.</li>
+                <li>
+                  <a href="comics.html#chapter3-page11">פרק 3</a> טס אל המטאור במהירות האור ומפוצץ אותו לרסיסי
+                  אור.
+                </li>
+                <li><a href="comics.html#chapter4-page4">פרק 4</a> נוחת על הסייבורג עם ברקים.</li>
+              </ul>
+              <blockquote>
+                <p>&quot;סליחה על האיחור חברים!&quot;</p>
+                <a href="comics.html#chapter1-page6">פרק 1, עמוד 6</a>
+              </blockquote>
+            </div>
+          </article>
+          <article class="hero-card rv" style="--c: #3b82f6" aria-labelledby="h-roni">
+            <a class="shot" href="comics.html#chapter4-page3"
+              ><img
+                src="CHAPTER4/3.jpg"
+                alt="פרק 4, עמוד 3: הצינור של רוני"
+                width="1376"
+                height="768"
+                loading="lazy"
+                decoding="async"
+              /><span class="cap">רגע מפתח · פרק 4, עמוד 3</span></a
+            >
+            <div class="body">
+              <span class="idx" aria-hidden="true">04</span>
+              <h3 id="h-roni">רוני</h3>
+              <p class="role">העצלן ובר המזל</p>
+              <ul class="tags" aria-label="כוחות">
+                <li>מים</li>
+                <li>דם</li>
+              </ul>
+              <p>
+                עצלן ובר מזל: מעדיף להשאיר את העבודה לאחרים, ואיכשהו תמיד יוצא מזה בשלום. אבל כשמישהו נכנס
+                לבית, זרמי המים והדם שלו מגיבים מיד. בפרק 4 הכוחות שלו נשאבים באמצע הקרב.
+              </p>
+              <h4>רגעים בכרך 1</h4>
+              <ul class="moments">
+                <li>
+                  <a href="comics.html#chapter2-page12">פרק 2</a> מגיב לפורצים בלילה במים ובדם ומוסר אותם
+                  למשטרה.
+                </li>
+                <li>
+                  <a href="comics.html#chapter3-page9">פרק 3</a> מציף את הרחוב, והגל מעיף בטעות את איבן אל שלט
+                  המבורגר.
+                </li>
+                <li>
+                  <a href="comics.html#chapter4-page3">פרק 4</a> קורע את צינורות הדלק של הסייבורג, ואז נשאב
+                  מכוחותיו.
+                </li>
+              </ul>
+              <blockquote>
+                <p>&quot;נכנסתם לבית הלא נכון!&quot;</p>
+                <a href="comics.html#chapter2-page12">פרק 2, עמוד 12</a>
+              </blockquote>
+            </div>
+          </article>
+        </div>
+        <div class="combo rv">
+          <h3>כוחות משולבים</h3>
+          <p>
+            הקרב בפרק 4 מראה למה הם חזקים יותר ביחד: מגן הגבישים של פיליפ, הצינור של רוני, הברקים של איבן
+            והאגרוף של עידן. בסוף הם מחזיקים ידיים ומתאחדים.
+          </p>
+          <a href="comics.html#chapter4-page10">לעמוד החיבוק הקבוצתי</a>
+        </div>
+      </section>
+
+      <section id="rivals" aria-labelledby="t-rivals">
+        <h2 id="t-rivals">היריבים</h2>
+        <div class="grid">
+          <article class="card rv">
+            <p class="m">פרק 1</p>
+            <h3>המספר החסוי</h3>
+            <p>
+              אלמוני שמתקשר באמצע ארוחה ומודיע שהוא יודע מי הארבעה ומה הכוחות שלהם, ושהוא בא לצוד אותם. זהותו
+              עדיין לא נחשפה.
+            </p>
+            <a href="comics.html#chapter1-page9">לעמוד בקומיקס</a>
+          </article>
+          <article class="card rv">
+            <p class="m">פרקים 2-3</p>
+            <h3>חייזרי הצללים</h3>
+            <p>
+              צללים שמתגנבים לעיר, קובץ אזהרה בשפה עתיקה ומטאור שמתקרב. בסוף פרק 3 מגיעה חללית אם בגודל של
+              שכונה שלמה.
+            </p>
+            <a href="comics.html#chapter3-page14">לעמוד בקומיקס</a>
+          </article>
+          <article class="card rv">
+            <p class="m">פרקים 3-4</p>
+            <h3>הסייבורג</h3>
+            <p>
+              יריב שיורה מטחי לייזר ומגן, וכולל &quot;שואב אנרגיה&quot; שמרוקן את כוחותיו של רוני. עידן מביס
+              אותו בפרק 4.
+            </p>
+            <a href="comics.html#chapter4-page5">לעמוד בקומיקס</a>
+          </article>
+        </div>
+        <p class="m rv">הקשר בין המספר החסוי, חייזרי הצללים והסייבורג עדיין לא נחשף בכרך 1.</p>
+      </section>
+
+      <section id="base" aria-labelledby="t-base">
+        <h2 id="t-base">הבסיס והציוד</h2>
+        <ul class="gear">
+          <li class="rv">
+            <h3>בית הקפה</h3>
+            <p>נקודת המפגש הראשונה, ושם מתפרצים הכוחות. <a href="comics.html#chapter1-page3">לעמוד</a></p>
+          </li>
+          <li class="rv">
+            <h3>הדירה</h3>
+            <p>
+              הסלון, הטלוויזיה ו&quot;בסיס האם&quot; של החבורה. <a href="comics.html#chapter2-page2">לעמוד</a>
+            </p>
+          </li>
+          <li class="rv">
+            <h3>המעבר הסודי</h3>
+            <p>
+              נפתח מתחת לספה בסלון ויורד לחדר הנשק ולמעבדה. <a href="comics.html#chapter2-page4">לעמוד</a>
+            </p>
+          </li>
+          <li class="rv">
+            <h3>מדפסת התלת-ממד</h3>
+            <p>מייצרת את הציוד המתקדם, ואפילו כלב רובוטי. <a href="comics.html#chapter2-page6">לעמוד</a></p>
+          </li>
+          <li class="rv">
+            <h3>תכשיטי ניתוב אנרגיה</h3>
+            <p>
+              תכשיטים מיוחדים שעוזרים לנתב את האנרגיה של הכוחות.
+              <a href="comics.html#chapter2-page3">לעמוד</a>
+            </p>
+          </li>
+          <li class="rv">
+            <h3>חליפות הגיבורים</h3>
+            <p>
+              נחשפות בסוף כרך 1, בארונות זכוכית במקום סודי. <a href="comics.html#chapter4-page15">לעמוד</a>
+            </p>
+          </li>
+        </ul>
+        <a class="wide rv" href="comics.html#chapter4-page15"
+          ><img
+            src="CHAPTER4/15.jpg"
+            alt="פרק 4, עמוד 15: ארונות הזכוכית וחליפות הגיבורים"
+            width="1376"
+            height="768"
+            loading="lazy"
+            decoding="async"
+        /></a>
+      </section>
+
+      <section id="timeline" aria-labelledby="t-timeline">
+        <h2 id="t-timeline">ציר זמן</h2>
+        <ol class="tl">
+          <li class="rv">
+            <a class="cov" href="comics.html#chapter1-page1"
+              ><img
+                src="Chapter_1.jpg"
+                alt="עטיפת פרק 1: לידת הכוחות"
+                width="1376"
+                height="768"
+                loading="lazy"
+                decoding="async"
+            /></a>
+            <div>
+              <p class="m">פרק 1 · פתיחת האפוס והתעוררות הסוד</p>
+              <h3>לידת הכוחות</h3>
+              <p>
+                ארבעה חברים שנולדו שונים נפגשים בבית קפה. שיחת איום מספר חסוי מפעילה את הכוחות, והם מכריזים:
+                &quot;אנחנו Squad Noobs.&quot;
+              </p>
+              <a href="comics.html#chapter1-page1">קראו את פרק 1</a>
+            </div>
+          </li>
+          <li class="rv">
+            <a class="cov" href="comics.html#chapter2-page1"
+              ><img
+                src="Chapter_2.jpg"
+                alt="עטיפת פרק 2: הדירה"
+                width="1376"
+                height="768"
+                loading="lazy"
+                decoding="async"
+            /></a>
+            <div>
+              <p class="m">פרק 2 · בסיס האם וההגנה הלילית</p>
+              <h3>הדירה</h3>
+              <p>
+                הדירה הופכת לבסיס עם מעבר סודי, חדר נשק ומדפסת תלת-ממד. אחרי משמרת בעיר, פורצים נכנסים בלילה,
+                ועידן מבין שמישהו מחפש אותם.
+              </p>
+              <a href="comics.html#chapter2-page1">קראו את פרק 2</a>
+            </div>
+          </li>
+          <li class="rv">
+            <a class="cov" href="comics.html#chapter3-page1"
+              ><img
+                src="Chapter_3.jpg"
+                alt="עטיפת פרק 3: כאוס בעיר"
+                width="1376"
+                height="768"
+                loading="lazy"
+                decoding="async"
+            /></a>
+            <div>
+              <p class="m">פרק 3 · מערכה אווירית והצלת העיר</p>
+              <h3>כאוס בעיר</h3>
+              <p>
+                קובץ אזהרה חייזרי, מטאור שמתקרב לעיר וקרב ברחובות. בסוף הפרק מגיעה חללית האם של חייזרי הצללים.
+              </p>
+              <a href="comics.html#chapter3-page1">קראו את פרק 3</a>
+            </div>
+          </li>
+          <li class="rv">
+            <a class="cov" href="comics.html#chapter4-page1"
+              ><img
+                src="Chapter_4.jpg"
+                alt="עטיפת פרק 4: מלחמת הפסגה"
+                width="1376"
+                height="768"
+                loading="lazy"
+                decoding="async"
+            /></a>
+            <div>
+              <p class="m">פרק 4 · עימות המנהיגים והקרב הכולל</p>
+              <h3>מלחמת הפסגה</h3>
+              <p>
+                הקרב מול הסייבורג. שואב האנרגיה מרוקן את רוני, ועידן נכנס ומנצח. בסוף נחשף מקום סודי עם חליפות
+                הגיבורים.
+              </p>
+              <a href="comics.html#chapter4-page1">קראו את פרק 4</a>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="end rv" aria-labelledby="t-end">
+        <h2 id="t-end">מוכנים להתחיל?</h2>
+        <p>סוף כרך 1 הוא רק יריית הפתיחה. תתחילו מהעמוד הראשון.</p>
+        <a class="cta" href="comics.html#chapter1-page1">קראו את הקומיקס</a>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      &copy; 2026 IDL - Squad Noobs. כל הזכויות שמורות.<br /><a href="characters.html">דמויות ויקום</a
+      ><a href="faq.html">שאלות נפוצות</a><a href="privacy.html">מדיניות פרטיות</a
+      ><a href="terms.html">תנאי שימוש</a><a href="accessibility.html">הצהרת נגישות</a>
+    </footer>
+    <!-- Accessibility toolbar -->
+    <script>
+      // Reveal sections as they scroll into view, and highlight the current topic in the chips bar.
+      (function () {
+        var root = document.documentElement;
+        if (!("IntersectionObserver" in window)) return;
+        root.classList.add("js");
+        var io = new IntersectionObserver(
+          function (es) {
+            es.forEach(function (e) {
+              if (e.isIntersecting) {
+                e.target.classList.add("in");
+                io.unobserve(e.target);
+              }
+            });
+          },
+          { threshold: 0.12 },
+        );
+        document.querySelectorAll(".rv").forEach(function (el) {
+          io.observe(el);
+        });
+        var chips = document.querySelectorAll(".chips a");
+        var so = new IntersectionObserver(
+          function (es) {
+            es.forEach(function (e) {
+              if (!e.isIntersecting) return;
+              chips.forEach(function (a) {
+                var on = a.getAttribute("href") === "#" + e.target.id;
+                a.classList.toggle("on", on);
+                on ? a.setAttribute("aria-current", "true") : a.removeAttribute("aria-current");
+              });
+            });
+          },
+          { rootMargin: "-30% 0px -60% 0px" },
+        );
+        document.querySelectorAll("main section[id]").forEach(function (s) {
+          so.observe(s);
+        });
+      })();
+    </script>
+    <script src="accessibility.js" defer></script>
+  </body>
+</html>

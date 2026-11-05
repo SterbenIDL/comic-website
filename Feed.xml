@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Squad Noobs - קומיקס</title>
+    <link>https://YOUR-DOMAIN.example/comics.html</link>
+    <atom:link href="https://YOUR-DOMAIN.example/feed.xml" rel="self" type="application/rss+xml" />
+    <description>פרקים חדשים של הקומיקס Squad Noobs</description>
+    <language>he</language>
+    <item>
+      <title>פרק 1: לידת הכוחות</title>
+      <link>https://YOUR-DOMAIN.example/comics.html#chapter1-page1</link>
+      <guid isPermaLink="false">squad-noobs-chapter-1</guid>
+      <description>ארבעה חברים שנולדו שונים נפגשים בבית קפה, והכוחות מתפרצים.</description>
+    </item>
+    <item>
+      <title>פרק 2: הדירה</title>
+      <link>https://YOUR-DOMAIN.example/comics.html#chapter2-page1</link>
+      <guid isPermaLink="false">squad-noobs-chapter-2</guid>
+      <description>בסיס האם, חדר הנשק ומדפסת התלת-ממד, ופורצים בלילה.</description>
+    </item>
+    <item>
+      <title>פרק 3: כאוס בעיר</title>
+      <link>https://YOUR-DOMAIN.example/comics.html#chapter3-page1</link>
+      <guid isPermaLink="false">squad-noobs-chapter-3</guid>
+      <description>קובץ אזהרה חייזרי, מטאור וקרב ברחובות.</description>
+    </item>
+    <item>
+      <title>פרק 4: מלחמת הפסגה</title>
+      <link>https://YOUR-DOMAIN.example/comics.html#chapter4-page1</link>
+      <guid isPermaLink="false">squad-noobs-chapter-4</guid>
+      <description>הקרב מול הסייבורג וחליפות הגיבורים.</description>
+    </item>
+  </channel>
+</rss>

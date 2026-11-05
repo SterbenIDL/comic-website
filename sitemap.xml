@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://YOUR-DOMAIN.example/comics.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://YOUR-DOMAIN.example/characters.html</loc><lastmod>2026-11-02</lastmod></url>
+  <url><loc>https://YOUR-DOMAIN.example/faq.html</loc><lastmod>2026-11-02</lastmod></url>
+  <url><loc>https://YOUR-DOMAIN.example/support.html</loc><lastmod>2026-11-02</lastmod></url>
+  <url><loc>https://YOUR-DOMAIN.example/privacy.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://YOUR-DOMAIN.example/accessibility.html</loc><lastmod>2026-11-02</lastmod></url>
+  <url><loc>https://YOUR-DOMAIN.example/terms.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://YOUR-DOMAIN.example/share/chapter1.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://YOUR-DOMAIN.example/share/chapter2.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://YOUR-DOMAIN.example/share/chapter3.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://YOUR-DOMAIN.example/share/chapter4.html</loc><lastmod>2026-11-01</lastmod></url>
+</urlset>
